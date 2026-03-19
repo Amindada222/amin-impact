@@ -3,7 +3,10 @@
     {% for block in section.blocks %}
       <div class="logo-item">
         {% if block.settings.image %}
-          <img src="{{ block.settings.image | image_url: width: 100 }}">
+          <img 
+            src="{{ block.settings.image | image_url: width: section.settings.logo_size }}"
+            style="height: {{ section.settings.logo_size }}px;"
+          >
         {% endif %}
         {% if block.settings.text != blank %}
           <span>{{ block.settings.text }}</span>
@@ -14,7 +17,10 @@
     {% for block in section.blocks %}
       <div class="logo-item">
         {% if block.settings.image %}
-          <img src="{{ block.settings.image | image_url: width: 100 }}">
+          <img 
+            src="{{ block.settings.image | image_url: width: section.settings.logo_size }}"
+            style="height: {{ section.settings.logo_size }}px;"
+          >
         {% endif %}
         {% if block.settings.text != blank %}
           <span>{{ block.settings.text }}</span>
@@ -46,7 +52,7 @@
 }
 
 .logo-item img {
-  height: 24px;
+  display: block;
 }
 
 .logo-item span {
@@ -63,7 +69,18 @@
 {% schema %}
 {
   "name": "Logo défilant",
-  "max_blocks": 12,
+  "settings": [
+    {
+      "type": "range",
+      "id": "logo_size",
+      "label": "Taille des logos",
+      "min": 20,
+      "max": 120,
+      "step": 2,
+      "default": 40
+    }
+  ],
+  "max_blocks": 20,
   "blocks": [
     {
       "type": "logo",
@@ -85,8 +102,7 @@
   ],
   "presets": [
     {
-      "name": "Logo défilant",
-      "category": "Image"
+      "name": "Logo défilant"
     }
   ]
 }
