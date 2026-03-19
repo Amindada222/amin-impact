@@ -54,27 +54,36 @@
     "logo_scroll_WjiAti": {
       "type": "logo-scroll",
       "blocks": {
+        "logo_dXVhdQ": {
+          "type": "logo",
+          "settings": {
+            "text": ""
+          }
+        },
         "logo_4UcmDK": {
           "type": "logo",
           "settings": {
             "image": "shopify://shop_images/pngegg_2.png",
-            "text": "Votre t"
+            "text": ""
           }
         },
         "logo_cytUwg": {
           "type": "logo",
           "settings": {
             "image": "shopify://shop_images/harpers-bazaar-logo-png_seeklogo-319856.png",
-            "text": "Votre texte"
+            "text": ""
           }
         }
       },
       "block_order": [
+        "logo_dXVhdQ",
         "logo_4UcmDK",
         "logo_cytUwg"
       ],
       "name": "Logo défilant",
-      "settings": {}
+      "settings": {
+        "logo_size": 72
+      }
     },
     "image-link-blocks": {
       "type": "image-link-blocks",
