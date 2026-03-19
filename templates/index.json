@@ -136,25 +136,29 @@
         "video_cB8NMc": {
           "type": "video",
           "settings": {
-            "video": "shopify://files/videos/trendtrack_tiktok_7454750811604733215.mp4"
+            "video": "shopify://files/videos/trendtrack_tiktok_7454750811604733215.mp4",
+            "width": 220
           }
         },
         "video_egTqMp": {
           "type": "video",
           "settings": {
-            "video": "shopify://files/videos/c742dac5af7f45f6be1b3297a33ac098.HD-720p-1.6Mbps-47698850.mp4"
+            "video": "shopify://files/videos/c742dac5af7f45f6be1b3297a33ac098.HD-720p-1.6Mbps-47698850.mp4",
+            "width": 220
           }
         },
         "video_xHkXVU": {
           "type": "video",
           "settings": {
-            "video": "shopify://files/videos/trendtrack_tiktok_7545807214624181526.mp4"
+            "video": "shopify://files/videos/trendtrack_tiktok_7545807214624181526.mp4",
+            "width": 220
           }
         },
         "video_yHBjfF": {
           "type": "video",
           "settings": {
-            "video": "shopify://files/videos/trendtrack_tiktok_7581482249753922818.mp4"
+            "video": "shopify://files/videos/trendtrack_tiktok_7581482249753922818.mp4",
+            "width": 220
           }
         }
       },
@@ -176,19 +180,6 @@
         "number": 25000,
         "title": "Happy customers across the USA",
         "subtitle": "Discover why thousands trust your brand."
-      }
-    },
-    "multiple-images-with-text": {
-      "type": "multiple-images-with-text",
-      "settings": {
-        "full_width": true,
-        "images_layout": "scattered",
-        "collage_images_alignment": "middle",
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "button_background": "",
-        "button_text_color": ""
       }
     },
     "featured-product": {
@@ -350,7 +341,6 @@
     "hot-spots",
     "ugc_video_mdFipD",
     "text_APmcUa",
-    "multiple-images-with-text",
     "featured-product",
     "faq"
   ]
