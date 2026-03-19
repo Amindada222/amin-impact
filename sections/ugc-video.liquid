@@ -1,70 +1,72 @@
-<div class="ugc-section">
-  <div class="ugc-wrapper">
+<section class="ugc-video-section">
+  <div class="ugc-video-container">
+    
     {% for block in section.blocks %}
-      <div class="ugc-card" style="width: {{ block.settings.width }}px;">
+      <div class="ugc-video-card" {{ block.shopify_attributes }}>
         
         {% if block.settings.video != blank %}
           <video 
-            src="{{ block.settings.video.sources[0].url }}"
-            autoplay
-            muted
-            loop
+            autoplay 
+            muted 
+            loop 
             playsinline
-          ></video>
+          >
+            <source src="{{ block.settings.video.sources[0].url }}" type="video/mp4">
+          </video>
         {% endif %}
 
       </div>
     {% endfor %}
+
   </div>
-</div>
+</section>
 
 <style>
-.ugc-section {
-  padding: 60px 0;
-  background: #fff;
-  overflow: hidden;
+.ugc-video-section {
+  padding: 60px 20px;
+  background: #f5f5f5;
 }
 
-/* ✅ WRAPPER CENTRÉ */
-.ugc-wrapper {
+/* ✅ CENTRAGE + SCROLL */
+.ugc-video-container {
   display: flex;
   gap: 20px;
   overflow-x: auto;
+  justify-content: center;
   scroll-snap-type: x mandatory;
-
-  /* CENTRAGE DESKTOP */
-  padding-left: calc((100vw - 1000px) / 2);
-  padding-right: calc((100vw - 1000px) / 2);
 }
 
-/* ✅ MOBILE FIX */
-@media screen and (max-width: 1000px) {
-  .ugc-wrapper {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
-
-/* ✅ CARD */
-.ugc-card {
+/* ✅ CARD FORMAT FIXE */
+.ugc-video-card {
   flex: 0 0 auto;
-  border-radius: 12px;
+  width: 220px;
+  aspect-ratio: 9 / 16; /* 🔥 FORCE FORMAT IDENTIQUE */
+  border-radius: 16px;
   overflow: hidden;
-  scroll-snap-align: start;
+  scroll-snap-align: center;
+  background: #000;
 }
 
-/* ✅ VIDEO */
-.ugc-card video {
+/* ✅ VIDEO S'ADAPTE AU FORMAT */
+.ugc-video-card video {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover; /* 🔥 coupe pour remplir */
   display: block;
-  border-radius: 12px;
+}
+
+/* ✅ MOBILE */
+@media screen and (max-width: 768px) {
+  .ugc-video-container {
+    justify-content: flex-start;
+    padding-left: 10px;
+  }
 }
 </style>
 
 {% schema %}
 {
-  "name": "UGC Vidéos",
+  "name": "UGC Videos",
   "settings": [],
   "blocks": [
     {
@@ -74,23 +76,14 @@
         {
           "type": "video",
           "id": "video",
-          "label": "Vidéo"
-        },
-        {
-          "type": "range",
-          "id": "width",
-          "label": "Largeur vidéo (px)",
-          "min": 120,
-          "max": 400,
-          "step": 10,
-          "default": 220
+          "label": "Choisir une vidéo"
         }
       ]
     }
   ],
   "presets": [
     {
-      "name": "UGC Vidéos"
+      "name": "UGC Videos"
     }
   ]
 }
