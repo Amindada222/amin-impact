@@ -9,6 +9,11 @@
  */
 {
   "sections": {
+    "logo_scroll_WjiAti": {
+      "type": "logo-scroll",
+      "name": "Logo défilant",
+      "settings": {}
+    },
     "slideshow": {
       "type": "slideshow",
       "blocks": {
@@ -747,6 +752,7 @@
   },
   "order": [
     "slideshow",
+    "logo_scroll_WjiAti",
     "image-link-blocks",
     "scrolling-text",
     "collection-list",
