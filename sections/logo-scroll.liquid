@@ -4,8 +4,8 @@
       <div class="logo-item">
         {% if block.settings.image %}
           <img 
-            src="{{ block.settings.image | image_url: width: section.settings.logo_size }}"
-            style="height: {{ section.settings.logo_size }}px;"
+            src="{{ block.settings.image | image_url: width: block.settings.logo_size }}"
+            style="height: {{ block.settings.logo_size }}px;"
           >
         {% endif %}
         {% if block.settings.text != blank %}
@@ -18,8 +18,8 @@
       <div class="logo-item">
         {% if block.settings.image %}
           <img 
-            src="{{ block.settings.image | image_url: width: section.settings.logo_size }}"
-            style="height: {{ section.settings.logo_size }}px;"
+            src="{{ block.settings.image | image_url: width: block.settings.logo_size }}"
+            style="height: {{ block.settings.logo_size }}px;"
           >
         {% endif %}
         {% if block.settings.text != blank %}
@@ -69,17 +69,6 @@
 {% schema %}
 {
   "name": "Logo défilant",
-  "settings": [
-    {
-      "type": "range",
-      "id": "logo_size",
-      "label": "Taille des logos",
-      "min": 20,
-      "max": 120,
-      "step": 2,
-      "default": 40
-    }
-  ],
   "max_blocks": 20,
   "blocks": [
     {
@@ -96,6 +85,15 @@
           "id": "text",
           "label": "Texte",
           "default": "Votre texte"
+        },
+        {
+          "type": "range",
+          "id": "logo_size",
+          "label": "Taille du logo",
+          "min": 20,
+          "max": 120,
+          "step": 2,
+          "default": 40
         }
       ]
     }
