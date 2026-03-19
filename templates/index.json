@@ -51,11 +51,6 @@
         "background_gradient": "linear-gradient(60deg, rgba(60, 65, 68, 1), rgba(23, 29, 33, 1) 98%)"
       }
     },
-    "logo_scroll_WjiAti": {
-      "type": "logo-scroll",
-      "name": "Logo défilant",
-      "settings": {}
-    },
     "rich_text_4YTbd9": {
       "type": "rich-text",
       "name": "Rich text",
@@ -365,7 +360,6 @@
   },
   "order": [
     "slideshow",
-    "logo_scroll_WjiAti",
     "rich_text_4YTbd9",
     "impact_text_arimNn",
     "hot-spots",
