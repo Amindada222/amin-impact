@@ -167,6 +167,17 @@
       "name": "UGC vidéos",
       "settings": {}
     },
+    "text_APmcUa": {
+      "type": "text",
+      "name": "Texte premium +",
+      "settings": {
+        "rating_text": "4,8/5 RATING FROM VERIFIED CUSTOMERS",
+        "badge": "VERIFIED CUSTOMER REVIEWS",
+        "number": 25000,
+        "title": "Happy customers across the USA",
+        "subtitle": "Discover why thousands trust your brand."
+      }
+    },
     "multiple-images-with-text": {
       "type": "multiple-images-with-text",
       "settings": {
@@ -338,6 +349,7 @@
     "impact_text_arimNn",
     "hot-spots",
     "ugc_video_mdFipD",
+    "text_APmcUa",
     "multiple-images-with-text",
     "featured-product",
     "faq"
