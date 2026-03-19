@@ -1,16 +1,19 @@
-<div class="ugc-images-section">
+<section class="ugc-images-section">
   <div class="ugc-container">
     {% for block in section.blocks %}
-      <div class="ugc-image-card">
+      <div class="ugc-image-card" {{ block.shopify_attributes }}>
         
         {% if block.settings.image != blank %}
-          <img src="{{ block.settings.image | image_url: width: 600 }}" alt="">
+          <img 
+            src="{{ block.settings.image | image_url: width: 800 }}" 
+            alt="ugc image"
+          >
         {% endif %}
 
       </div>
     {% endfor %}
   </div>
-</div>
+</section>
 
 <style>
 .ugc-images-section {
@@ -21,7 +24,7 @@
 .ugc-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 25px;
+  gap: 24px;
   max-width: 1100px;
   margin: 0 auto;
 }
@@ -38,7 +41,7 @@
   border-radius: 16px;
 }
 
-/* ✅ mobile */
+/* ✅ MOBILE */
 @media screen and (max-width: 768px) {
   .ugc-container {
     grid-template-columns: 1fr;
@@ -48,24 +51,31 @@
 
 {% schema %}
 {
-  "name": "UGC Images (packaging)",
+  "name": "UGC Images",
+  "tag": "section",
+  "class": "ugc-images",
   "settings": [],
   "blocks": [
     {
       "type": "image",
-      "name": "Image client",
+      "name": "Image",
       "settings": [
         {
           "type": "image_picker",
           "id": "image",
-          "label": "Image"
+          "label": "Choisir une image"
         }
       ]
     }
   ],
   "presets": [
     {
-      "name": "UGC Images"
+      "name": "UGC Images",
+      "blocks": [
+        { "type": "image" },
+        { "type": "image" },
+        { "type": "image" }
+      ]
     }
   ]
 }
