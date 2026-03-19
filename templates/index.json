@@ -105,35 +105,50 @@
     },
     "rich_text_4YTbd9": {
       "type": "rich-text",
+      "name": "Rich text",
+      "settings": {
+        "full_width": false,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "#ffffff",
+        "background_gradient": "radial-gradient(rgba(255, 255, 255, 1) 100%, rgba(247, 197, 204, 1) 100%)",
+        "text_color": ""
+      }
+    },
+    "impact_text_arimNn": {
+      "type": "impact-text",
       "blocks": {
-        "subheading_WgAMbj": {
-          "type": "subheading",
+        "item_Emi8ip": {
+          "type": "item",
           "settings": {
-            "text": "Subheading"
-          }
-        },
-        "heading_c4Wtey": {
-          "type": "heading",
-          "settings": {
-            "text": "Heading",
-            "heading_tag": "h1",
-            "text_color": "",
-            "gradient": ""
+            "title": "",
+            "subheading": "Why Thousands of Women Can't Live Without It",
+            "content": "",
+            "button_text": "",
+            "button_url": "",
+            "animate_impact_text": true,
+            "animate_impact_text_duration": 2.4
           }
         }
       },
       "block_order": [
-        "subheading_WgAMbj",
-        "heading_c4Wtey"
+        "item_Emi8ip"
       ],
-      "name": "Rich text",
+      "name": "Impact text",
       "settings": {
         "full_width": true,
-        "content_width": "small",
-        "text_position": "center",
+        "stack_mobile": true,
+        "text_alignment": "center",
+        "impact_text_style": "fill",
+        "text_divider": "none",
+        "impact_text_size_ratio": 1,
         "background": "",
         "background_gradient": "",
-        "text_color": ""
+        "heading_text_color": "",
+        "heading_gradient": "",
+        "text_color": "",
+        "button_background": "",
+        "button_text_color": ""
       }
     },
     "hot-spots": {
@@ -330,6 +345,7 @@
     "slideshow",
     "logo_scroll_WjiAti",
     "rich_text_4YTbd9",
+    "impact_text_arimNn",
     "hot-spots",
     "multiple-images-with-text",
     "featured-product",
