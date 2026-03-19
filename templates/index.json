@@ -53,53 +53,6 @@
     },
     "logo_scroll_WjiAti": {
       "type": "logo-scroll",
-      "blocks": {
-        "logo_aXCVGc": {
-          "type": "logo",
-          "settings": {
-            "text": "Votre texte",
-            "logo_size": 40
-          }
-        },
-        "logo_dXVhdQ": {
-          "type": "logo",
-          "settings": {
-            "image": "shopify://shop_images/pngegg_3.png",
-            "text": "",
-            "logo_size": 40
-          }
-        },
-        "logo_4UcmDK": {
-          "type": "logo",
-          "settings": {
-            "image": "shopify://shop_images/pngegg_2.png",
-            "text": "",
-            "logo_size": 40
-          }
-        },
-        "logo_cytUwg": {
-          "type": "logo",
-          "settings": {
-            "image": "shopify://shop_images/harpers-bazaar-logo-png_seeklogo-319856.png",
-            "text": "",
-            "logo_size": 72
-          }
-        },
-        "logo_VrRENq": {
-          "type": "logo",
-          "settings": {
-            "text": "Votre texte",
-            "logo_size": 40
-          }
-        }
-      },
-      "block_order": [
-        "logo_aXCVGc",
-        "logo_dXVhdQ",
-        "logo_4UcmDK",
-        "logo_cytUwg",
-        "logo_VrRENq"
-      ],
       "name": "Logo défilant",
       "settings": {}
     },
@@ -186,16 +139,16 @@
             "video": "shopify://files/videos/trendtrack_tiktok_7454750811604733215.mp4"
           }
         },
-        "video_xHkXVU": {
-          "type": "video",
-          "settings": {
-            "video": "shopify://files/videos/trendtrack_tiktok_7545807214624181526.mp4"
-          }
-        },
         "video_egTqMp": {
           "type": "video",
           "settings": {
             "video": "shopify://files/videos/c742dac5af7f45f6be1b3297a33ac098.HD-720p-1.6Mbps-47698850.mp4"
+          }
+        },
+        "video_xHkXVU": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/trendtrack_tiktok_7545807214624181526.mp4"
           }
         },
         "video_yHBjfF": {
@@ -207,8 +160,8 @@
       },
       "block_order": [
         "video_cB8NMc",
-        "video_xHkXVU",
         "video_egTqMp",
+        "video_xHkXVU",
         "video_yHBjfF"
       ],
       "name": "UGC vidéos",
