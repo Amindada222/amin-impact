@@ -1,36 +1,29 @@
 <div class="logo-scroll">
   <div class="logo-track">
 
-    <div class="logo-item">
-      <img src="{{ 'logo1.png' | asset_url }}" alt="">
-      <p>Paiement sécurisé</p>
-    </div>
+    {% for block in section.blocks %}
+      <div class="logo-item">
+        {% if block.settings.image != blank %}
+          <img src="{{ block.settings.image | image_url }}" alt="">
+        {% endif %}
+        
+        {% if block.settings.text != blank %}
+          <p>{{ block.settings.text }}</p>
+        {% endif %}
+      </div>
+    {% endfor %}
 
-    <div class="logo-item">
-      <img src="{{ 'logo2.png' | asset_url }}" alt="">
-      <p>Livraison rapide</p>
-    </div>
-
-    <div class="logo-item">
-      <img src="{{ 'logo3.png' | asset_url }}" alt="">
-      <p>Satisfait ou remboursé</p>
-    </div>
-
-    <div class="logo-item">
-      <img src="{{ 'logo4.png' | asset_url }}" alt="">
-      <p>Support 24/7</p>
-    </div>
-
-    <!-- duplication pour effet infini -->
-    <div class="logo-item">
-      <img src="{{ 'logo1.png' | asset_url }}" alt="">
-      <p>Paiement sécurisé</p>
-    </div>
-
-    <div class="logo-item">
-      <img src="{{ 'logo2.png' | asset_url }}" alt="">
-      <p>Livraison rapide</p>
-    </div>
+    {% for block in section.blocks %}
+      <div class="logo-item">
+        {% if block.settings.image != blank %}
+          <img src="{{ block.settings.image | image_url }}" alt="">
+        {% endif %}
+        
+        {% if block.settings.text != blank %}
+          <p>{{ block.settings.text }}</p>
+        {% endif %}
+      </div>
+    {% endfor %}
 
   </div>
 </div>
@@ -78,6 +71,24 @@
 {% schema %}
 {
   "name": "Logo défilant",
+  "blocks": [
+    {
+      "type": "logo",
+      "name": "Logo",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image du logo"
+        },
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Texte"
+        }
+      ]
+    }
+  ],
   "presets": [
     {
       "name": "Logo défilant"
