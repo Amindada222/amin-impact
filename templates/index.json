@@ -20,9 +20,9 @@
             "content_max_width": 780,
             "mobile_text_position": "place-self-center text-center",
             "desktop_text_position": "sm:place-self-center sm:text-center",
-            "subheading": "Tell your story",
-            "title": "Slide title",
-            "heading_tag": "h0",
+            "subheading": "",
+            "title": "Salon-Smooth Feet. Zero Appointment. 5 Minutes.",
+            "heading_tag": "h3",
             "button_text": "",
             "button_link": "",
             "text_color": "#ffffff",
@@ -181,6 +181,36 @@
         "title": "Happy customers across the USA",
         "subtitle": "Discover why thousands trust your brand."
       }
+    },
+    "imageugc_NtPEeY": {
+      "type": "imageugc",
+      "blocks": {
+        "image_4EzwAw": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Design_sans_titre_12.png"
+          }
+        },
+        "image_98H4ER": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/cmmy04c8t01uvwsrk82ijpyij.jpg"
+          }
+        },
+        "image_aBFUWe": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/cmmxzrqx501uqwsrkcvcpjaqn.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "image_4EzwAw",
+        "image_98H4ER",
+        "image_aBFUWe"
+      ],
+      "name": "UGC Images",
+      "settings": {}
     },
     "featured-product": {
       "type": "featured-product",
@@ -341,6 +371,7 @@
     "hot-spots",
     "ugc_video_mdFipD",
     "text_APmcUa",
+    "imageugc_NtPEeY",
     "featured-product",
     "faq"
   ]
