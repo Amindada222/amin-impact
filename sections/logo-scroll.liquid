@@ -1,29 +1,15 @@
-<div class="logo-scroll">
-  <div class="logo-track">
+<div class="ugc-section">
+  <div class="ugc-wrapper" id="ugc-scroll">
     {% for block in section.blocks %}
-      <div class="logo-item">
-        {% if block.settings.image %}
-          <img 
-            src="{{ block.settings.image | image_url: width: block.settings.logo_size }}"
-            style="height: {{ block.settings.logo_size }}px;"
-          >
-        {% endif %}
-        {% if block.settings.text != blank %}
-          <span>{{ block.settings.text }}</span>
-        {% endif %}
-      </div>
-    {% endfor %}
-
-    {% for block in section.blocks %}
-      <div class="logo-item">
-        {% if block.settings.image %}
-          <img 
-            src="{{ block.settings.image | image_url: width: block.settings.logo_size }}"
-            style="height: {{ block.settings.logo_size }}px;"
-          >
-        {% endif %}
-        {% if block.settings.text != blank %}
-          <span>{{ block.settings.text }}</span>
+      <div class="ugc-card">
+        {% if block.settings.video != blank %}
+          <video 
+            src="{{ block.settings.video.sources[0].url }}"
+            autoplay
+            muted
+            loop
+            playsinline
+          ></video>
         {% endif %}
       </div>
     {% endfor %}
@@ -31,76 +17,92 @@
 </div>
 
 <style>
-.logo-scroll {
-  overflow: hidden;
+.ugc-section {
+  padding: 30px 0;
   background: #fff;
-  padding: 10px 0;
 }
 
-.logo-track {
+.ugc-wrapper {
   display: flex;
-  width: max-content;
-  animation: scroll 18s linear infinite;
+  gap: 16px;
+  overflow-x: auto;
+  padding: 0 20px;
+  scroll-snap-type: x mandatory;
 }
 
-.logo-item {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  margin: 0 30px;
-  white-space: nowrap;
+.ugc-wrapper::-webkit-scrollbar {
+  display: none;
 }
 
-.logo-item img {
-  display: block;
+.ugc-card {
+  flex: 0 0 auto;
+  width: 200px;
+  height: 355px; /* format vertical uniforme */
+  border-radius: 14px;
+  overflow: hidden;
+  scroll-snap-align: start;
+  background: #000;
 }
 
-.logo-item span {
-  font-size: 14px;
-  color: #222;
-}
-
-@keyframes scroll {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+.ugc-card video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 </style>
 
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const container = document.getElementById("ugc-scroll");
+
+  let isDown = false;
+  let startX;
+  let scrollLeft;
+
+  container.addEventListener("mousedown", (e) => {
+    isDown = true;
+    startX = e.pageX - container.offsetLeft;
+    scrollLeft = container.scrollLeft;
+  });
+
+  container.addEventListener("mouseleave", () => {
+    isDown = false;
+  });
+
+  container.addEventListener("mouseup", () => {
+    isDown = false;
+  });
+
+  container.addEventListener("mousemove", (e) => {
+    if (!isDown) return;
+    e.preventDefault();
+    const x = e.pageX - container.offsetLeft;
+    const walk = (x - startX) * 2;
+    container.scrollLeft = scrollLeft - walk;
+  });
+});
+</script>
+
 {% schema %}
 {
-  "name": "Logo défilant",
-  "max_blocks": 20,
+  "name": "UGC vidéos",
+  "max_blocks": 12,
   "blocks": [
     {
-      "type": "logo",
-      "name": "Logo",
+      "type": "video",
+      "name": "Vidéo",
       "settings": [
         {
-          "type": "image_picker",
-          "id": "image",
-          "label": "Image du logo"
-        },
-        {
-          "type": "text",
-          "id": "text",
-          "label": "Texte",
-          "default": "Votre texte"
-        },
-        {
-          "type": "range",
-          "id": "logo_size",
-          "label": "Taille du logo",
-          "min": 20,
-          "max": 120,
-          "step": 2,
-          "default": 40
+          "type": "video",
+          "id": "video",
+          "label": "Vidéo UGC"
         }
       ]
     }
   ],
   "presets": [
     {
-      "name": "Logo défilant"
+      "name": "UGC vidéos"
     }
   ]
 }
