@@ -1,0 +1,82 @@
+<section class="ugc-images-section">
+  <div class="ugc-container">
+    {% for block in section.blocks %}
+      <div class="ugc-image-card" {{ block.shopify_attributes }}>
+        
+        {% if block.settings.image != blank %}
+          <img 
+            src="{{ block.settings.image | image_url: width: 800 }}" 
+            alt="ugc image"
+          >
+        {% endif %}
+
+      </div>
+    {% endfor %}
+  </div>
+</section>
+
+<style>
+.ugc-images-section {
+  padding: 60px 20px;
+  background: #f5f5f5;
+}
+
+.ugc-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.ugc-image-card {
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.ugc-image-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 16px;
+}
+
+/* ✅ MOBILE */
+@media screen and (max-width: 768px) {
+  .ugc-container {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+
+{% schema %}
+{
+  "name": "UGC Images",
+  "tag": "section",
+  "class": "ugc-images",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "image",
+      "name": "Image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Choisir une image"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "UGC Images",
+      "blocks": [
+        { "type": "image" },
+        { "type": "image" },
+        { "type": "image" }
+      ]
+    }
+  ]
+}
+{% endschema %}
