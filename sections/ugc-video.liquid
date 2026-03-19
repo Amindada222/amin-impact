@@ -1,16 +1,18 @@
 <div class="ugc-section">
   <div class="ugc-wrapper">
     {% for block in section.blocks %}
-      <div class="ugc-card">
+      <div class="ugc-card" style="width: {{ block.settings.width }}px;">
+        
         {% if block.settings.video != blank %}
           <video 
-            src="{{ block.settings.video.sources[0].url }}" 
-            autoplay 
-            muted 
-            loop 
+            src="{{ block.settings.video.sources[0].url }}"
+            autoplay
+            muted
+            loop
             playsinline
           ></video>
         {% endif %}
+
       </div>
     {% endfor %}
   </div>
@@ -18,43 +20,52 @@
 
 <style>
 .ugc-section {
-  padding: 20px 0;
+  padding: 60px 0;
   background: #fff;
+  overflow: hidden;
 }
 
+/* ✅ WRAPPER CENTRÉ */
 .ugc-wrapper {
   display: flex;
-  gap: 16px;
+  gap: 20px;
   overflow-x: auto;
-  padding: 0 15px;
   scroll-snap-type: x mandatory;
+
+  /* CENTRAGE DESKTOP */
+  padding-left: calc((100vw - 1000px) / 2);
+  padding-right: calc((100vw - 1000px) / 2);
 }
 
-.ugc-wrapper::-webkit-scrollbar {
-  display: none;
+/* ✅ MOBILE FIX */
+@media screen and (max-width: 1000px) {
+  .ugc-wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
+/* ✅ CARD */
 .ugc-card {
-  min-width: 180px;
-  height: 320px;
+  flex: 0 0 auto;
   border-radius: 12px;
   overflow: hidden;
-  flex-shrink: 0;
   scroll-snap-align: start;
-  background: #000;
 }
 
+/* ✅ VIDEO */
 .ugc-card video {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
+  display: block;
+  border-radius: 12px;
 }
 </style>
 
 {% schema %}
 {
-  "name": "UGC vidéos",
-  "max_blocks": 10,
+  "name": "UGC Vidéos",
+  "settings": [],
   "blocks": [
     {
       "type": "video",
@@ -63,14 +74,23 @@
         {
           "type": "video",
           "id": "video",
-          "label": "Vidéo UGC"
+          "label": "Vidéo"
+        },
+        {
+          "type": "range",
+          "id": "width",
+          "label": "Largeur vidéo (px)",
+          "min": 120,
+          "max": 400,
+          "step": 10,
+          "default": 220
         }
       ]
     }
   ],
   "presets": [
     {
-      "name": "UGC vidéos"
+      "name": "UGC Vidéos"
     }
   ]
 }
