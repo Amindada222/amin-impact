@@ -1,0 +1,87 @@
+<div class="logo-scroll">
+  <div class="logo-track">
+
+    <div class="logo-item">
+      <img src="{{ 'logo1.png' | asset_url }}" alt="">
+      <p>Paiement sécurisé</p>
+    </div>
+
+    <div class="logo-item">
+      <img src="{{ 'logo2.png' | asset_url }}" alt="">
+      <p>Livraison rapide</p>
+    </div>
+
+    <div class="logo-item">
+      <img src="{{ 'logo3.png' | asset_url }}" alt="">
+      <p>Satisfait ou remboursé</p>
+    </div>
+
+    <div class="logo-item">
+      <img src="{{ 'logo4.png' | asset_url }}" alt="">
+      <p>Support 24/7</p>
+    </div>
+
+    <!-- duplication pour effet infini -->
+    <div class="logo-item">
+      <img src="{{ 'logo1.png' | asset_url }}" alt="">
+      <p>Paiement sécurisé</p>
+    </div>
+
+    <div class="logo-item">
+      <img src="{{ 'logo2.png' | asset_url }}" alt="">
+      <p>Livraison rapide</p>
+    </div>
+
+  </div>
+</div>
+
+<style>
+.logo-scroll {
+  overflow: hidden;
+  background: #fff;
+  padding: 15px 0;
+}
+
+.logo-track {
+  display: flex;
+  width: max-content;
+  animation: scroll 20s linear infinite;
+}
+
+.logo-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 30px;
+  white-space: nowrap;
+}
+
+.logo-item img {
+  width: 30px;
+}
+
+.logo-item p {
+  font-size: 14px;
+  color: #333;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+</style>
+
+{% schema %}
+{
+  "name": "Logo défilant",
+  "presets": [
+    {
+      "name": "Logo défilant"
+    }
+  ]
+}
+{% endschema %}
