@@ -1,63 +1,52 @@
 <div class="logo-scroll">
   <div class="logo-track">
+    {% for block in section.blocks %}
+      <div class="logo-item">
+        {% if block.settings.image %}
+          <img src="{{ block.settings.image | image_url: width: 100 }}">
+        {% endif %}
+        {% if block.settings.text != blank %}
+          <span>{{ block.settings.text }}</span>
+        {% endif %}
+      </div>
+    {% endfor %}
 
-    <div class="logo-item">
-      <img src="URL_IMAGE_1">
-      <span>Paiement sécurisé</span>
-    </div>
-
-    <div class="logo-item">
-      <img src="URL_IMAGE_2">
-      <span>Livraison rapide</span>
-    </div>
-
-    <div class="logo-item">
-      <img src="URL_IMAGE_3">
-      <span>Satisfait ou remboursé</span>
-    </div>
-
-    <div class="logo-item">
-      <img src="URL_IMAGE_4">
-      <span>Support 24/7</span>
-    </div>
-
-    <!-- DUPLIQUE LES BLOCS POUR L’EFFET INFINI -->
-
-    <div class="logo-item">
-      <img src="URL_IMAGE_1">
-      <span>Paiement sécurisé</span>
-    </div>
-
-    <div class="logo-item">
-      <img src="URL_IMAGE_2">
-      <span>Livraison rapide</span>
-    </div>
-
+    {% for block in section.blocks %}
+      <div class="logo-item">
+        {% if block.settings.image %}
+          <img src="{{ block.settings.image | image_url: width: 100 }}">
+        {% endif %}
+        {% if block.settings.text != blank %}
+          <span>{{ block.settings.text }}</span>
+        {% endif %}
+      </div>
+    {% endfor %}
   </div>
 </div>
 
 <style>
 .logo-scroll {
   overflow: hidden;
-  padding: 12px 0;
   background: #fff;
+  padding: 10px 0;
 }
 
 .logo-track {
   display: flex;
-  animation: scroll 15s linear infinite;
+  width: max-content;
+  animation: scroll 18s linear infinite;
 }
 
 .logo-item {
   display: flex;
   align-items: center;
-  gap: 10px;
-  margin: 0 40px;
+  gap: 8px;
+  margin: 0 30px;
   white-space: nowrap;
 }
 
 .logo-item img {
-  height: 25px;
+  height: 24px;
 }
 
 .logo-item span {
@@ -70,3 +59,35 @@
   100% { transform: translateX(-50%); }
 }
 </style>
+
+{% schema %}
+{
+  "name": "Logo défilant",
+  "max_blocks": 12,
+  "blocks": [
+    {
+      "type": "logo",
+      "name": "Logo",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image du logo"
+        },
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Texte",
+          "default": "Votre texte"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Logo défilant",
+      "category": "Image"
+    }
+  ]
+}
+{% endschema %}
