@@ -14,6 +14,13 @@
     "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
+        "message_FLhPQ9": {
+          "type": "message",
+          "settings": {
+            "text": "🚚 Free Shipping in the US",
+            "url": ""
+          }
+        },
         "message_MPanKf": {
           "type": "message",
           "settings": {
@@ -37,6 +44,7 @@
         }
       },
       "block_order": [
+        "message_FLhPQ9",
         "message_MPanKf",
         "message_zeRFcK",
         "message"
