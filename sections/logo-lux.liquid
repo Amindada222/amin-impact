@@ -1,0 +1,46 @@
+<section>
+  <div>
+    {% for block in section.blocks %}
+      {% if block.settings.image != blank %}
+        <img 
+          src="{{ block.settings.image | image_url: width: 600 }}" 
+          style="height: {{ block.settings.logo_size }}px;"
+        >
+      {% endif %}
+    {% endfor %}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Logo simple",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "logo",
+      "name": "Logo",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "range",
+          "id": "logo_size",
+          "label": "Taille",
+          "min": 20,
+          "max": 120,
+          "step": 2,
+          "default": 50
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Logo simple"
+    }
+  ]
+}
+{% endschema %}

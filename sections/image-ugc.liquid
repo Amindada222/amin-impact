@@ -1,0 +1,134 @@
+<section class="ugc-section">
+  <div class="ugc-container">
+    {% for block in section.blocks %}
+      <div class="ugc-item" {{ block.shopify_attributes }}>
+        
+        {% if block.settings.video != blank %}
+          <video 
+            src="{{ block.settings.video.sources[0].url }}"
+            autoplay
+            muted
+            loop
+            playsinline
+          ></video>
+        {% elsif block.settings.image != blank %}
+          <img 
+            src="{{ block.settings.image | image_url: width: 800 }}"
+            alt=""
+          >
+        {% endif %}
+
+      </div>
+    {% endfor %}
+  </div>
+</section>
+
+<style>
+.ugc-section {
+  padding: 20px 0;
+}
+
+/* CONTAINER */
+.ugc-container {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  padding: 0 16px;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* ITEM */
+.ugc-item {
+  flex: 0 0 80%;
+  scroll-snap-align: center;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* MEDIA */
+.ugc-item video,
+.ugc-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 14px;
+  display: block;
+}
+
+/* HIDE SCROLLBAR */
+.ugc-container::-webkit-scrollbar {
+  display: none;
+}
+
+/* DESKTOP */
+@media screen and (min-width: 768px) {
+  .ugc-container {
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .ugc-item {
+    flex: 0 0 300px;
+  }
+}
+</style>
+
+<script>
+const container = document.querySelector('.ugc-container');
+
+let isDown = false;
+let startX;
+let scrollLeft;
+
+container.addEventListener('mousedown', (e) => {
+  isDown = true;
+  startX = e.pageX - container.offsetLeft;
+  scrollLeft = container.scrollLeft;
+});
+
+container.addEventListener('mouseleave', () => {
+  isDown = false;
+});
+
+container.addEventListener('mouseup', () => {
+  isDown = false;
+});
+
+container.addEventListener('mousemove', (e) => {
+  if(!isDown) return;
+  e.preventDefault();
+  const x = e.pageX - container.offsetLeft;
+  const walk = (x - startX) * 2;
+  container.scrollLeft = scrollLeft - walk;
+});
+</script>
+
+{% schema %}
+{
+  "name": "UGC Premium",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "media",
+      "name": "Image ou vidéo",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "video",
+          "id": "video",
+          "label": "Vidéo"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "UGC Premium"
+    }
+  ]
+}
+{% endschema %}
