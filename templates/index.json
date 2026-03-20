@@ -63,42 +63,6 @@
         "text_color": ""
       }
     },
-    "impact_text_arimNn": {
-      "type": "impact-text",
-      "blocks": {
-        "item_Emi8ip": {
-          "type": "item",
-          "settings": {
-            "title": "",
-            "subheading": "Why Thousands of Women Can't Live Without It",
-            "content": "",
-            "button_text": "",
-            "button_url": "",
-            "animate_impact_text": true,
-            "animate_impact_text_duration": 2.4
-          }
-        }
-      },
-      "block_order": [
-        "item_Emi8ip"
-      ],
-      "name": "Impact text",
-      "settings": {
-        "full_width": true,
-        "stack_mobile": true,
-        "text_alignment": "center",
-        "impact_text_style": "fill",
-        "text_divider": "none",
-        "impact_text_size_ratio": 1,
-        "background": "",
-        "background_gradient": "",
-        "heading_text_color": "",
-        "heading_gradient": "",
-        "text_color": "",
-        "button_background": "",
-        "button_text_color": ""
-      }
-    },
     "logo_marque_kpGUQP": {
       "type": "logo-marque",
       "blocks": {
@@ -135,6 +99,42 @@
       ],
       "name": "Logo défilant luxe",
       "settings": {}
+    },
+    "impact_text_arimNn": {
+      "type": "impact-text",
+      "blocks": {
+        "item_Emi8ip": {
+          "type": "item",
+          "settings": {
+            "title": "",
+            "subheading": "Why Thousands of Women Can't Live Without It",
+            "content": "",
+            "button_text": "",
+            "button_url": "",
+            "animate_impact_text": true,
+            "animate_impact_text_duration": 2.4
+          }
+        }
+      },
+      "block_order": [
+        "item_Emi8ip"
+      ],
+      "name": "Impact text",
+      "settings": {
+        "full_width": true,
+        "stack_mobile": true,
+        "text_alignment": "center",
+        "impact_text_style": "fill",
+        "text_divider": "none",
+        "impact_text_size_ratio": 1,
+        "background": "",
+        "background_gradient": "",
+        "heading_text_color": "",
+        "heading_gradient": "",
+        "text_color": "",
+        "button_background": "",
+        "button_text_color": ""
+      }
     },
     "hot-spots": {
       "type": "hot-spots",
@@ -213,29 +213,29 @@
     "imageugc_NtPEeY": {
       "type": "imageugc",
       "blocks": {
-        "image_4EzwAw": {
+        "image_LWYR8w": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Design_sans_titre_12.png"
+            "image": "shopify://shop_images/Design_sans_titre_2.png"
           }
         },
-        "image_98H4ER": {
+        "image_gca449": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/cmmy04c8t01uvwsrk82ijpyij.jpg"
+            "image": "shopify://shop_images/Design_sans_titre_3.png"
           }
         },
-        "image_aBFUWe": {
+        "image_FbQzaa": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/cmmxzrqx501uqwsrkcvcpjaqn.jpg"
+            "image": "shopify://shop_images/Design_sans_titre_1.png"
           }
         }
       },
       "block_order": [
-        "image_4EzwAw",
-        "image_98H4ER",
-        "image_aBFUWe"
+        "image_LWYR8w",
+        "image_gca449",
+        "image_FbQzaa"
       ],
       "name": "UGC Images",
       "settings": {}
