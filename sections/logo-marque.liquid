@@ -1,8 +1,96 @@
+<section class="logo-marquee-luxe">
+  <div class="logo-track">
+
+    {% for block in section.blocks %}
+      <div class="logo-item">
+        {% if block.settings.image != blank %}
+          <img src="{{ block.settings.image | image_url: width: 200 }}" alt="">
+        {% endif %}
+      </div>
+    {% endfor %}
+
+    {% for block in section.blocks %}
+      <div class="logo-item">
+        {% if block.settings.image != blank %}
+          <img src="{{ block.settings.image | image_url: width: 200 }}" alt="">
+        {% endif %}
+      </div>
+    {% endfor %}
+
+  </div>
+</section>
+
+<style>
+.logo-marquee-luxe {
+  position: relative;
+  overflow: hidden;
+  padding: 30px 0;
+  background: #ffffff;
+}
+
+.logo-marquee-luxe::before,
+.logo-marquee-luxe::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 60px;
+  height: 100%;
+  z-index: 2;
+}
+
+.logo-marquee-luxe::before {
+  left: 0;
+  background: linear-gradient(to right, #fff, transparent);
+}
+
+.logo-marquee-luxe::after {
+  right: 0;
+  background: linear-gradient(to left, #fff, transparent);
+}
+
+.logo-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 20s linear infinite;
+}
+
+.logo-marquee-luxe:hover .logo-track {
+  animation-play-state: paused;
+}
+
+.logo-item {
+  flex: 0 0 auto;
+  margin: 0 40px;
+}
+
+.logo-item img {
+  height: 30px;
+  opacity: 0.6;
+  filter: grayscale(100%);
+  transition: all 0.3s ease;
+}
+
+.logo-item img:hover {
+  opacity: 1;
+  filter: grayscale(0%);
+  transform: scale(1.05);
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@media screen and (max-width: 768px) {
+  .logo-item img {
+    height: 24px;
+  }
+}
+</style>
+
 {% schema %}
 {
-  "name": "Logo défilant",
-  "tag": "section",
-  "class": "logo-marquee-section",
+  "name": "Logo défilant luxe",
   "settings": [],
   "blocks": [
     {
@@ -13,24 +101,13 @@
           "type": "image_picker",
           "id": "image",
           "label": "Logo"
-        },
-        {
-          "type": "text",
-          "id": "text",
-          "label": "Texte",
-          "default": "Texte"
         }
       ]
     }
   ],
   "presets": [
     {
-      "name": "Logo défilant",
-      "blocks": [
-        { "type": "logo" },
-        { "type": "logo" },
-        { "type": "logo" }
-      ]
+      "name": "Logo défilant luxe"
     }
   ]
 }
