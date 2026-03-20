@@ -1,0 +1,37 @@
+{% schema %}
+{
+  "name": "Logo défilant",
+  "tag": "section",
+  "class": "logo-marquee-section",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "logo",
+      "name": "Logo",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Logo"
+        },
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Texte",
+          "default": "Texte"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Logo défilant",
+      "blocks": [
+        { "type": "logo" },
+        { "type": "logo" },
+        { "type": "logo" }
+      ]
+    }
+  ]
+}
+{% endschema %}
