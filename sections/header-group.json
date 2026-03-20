@@ -14,6 +14,13 @@
     "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
+        "message_MPanKf": {
+          "type": "message",
+          "settings": {
+            "text": "✅ 30-Day Money-Back Guarantee — Zero Risk, 100% Satisfaction",
+            "url": ""
+          }
+        },
         "message_zeRFcK": {
           "type": "message",
           "settings": {
@@ -30,6 +37,7 @@
         }
       },
       "block_order": [
+        "message_MPanKf",
         "message_zeRFcK",
         "message"
       ],
