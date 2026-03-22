@@ -2,47 +2,70 @@
   <div class="ugc-container">
     {% for block in section.blocks %}
       <div class="ugc-item" {{ block.shopify_attributes }}>
-        
-        {% if block.settings.video != blank %}
-          {{ block.settings.video | video_tag: autoplay: true, loop: true, muted: true, playsinline: true }}
-        {% elsif block.settings.image != blank %}
-          <img src="{{ block.settings.image | image_url: width: 800 }}" alt="">
+        {% if block.settings.image != blank %}
+          <img src="{{ block.settings.image | image_url: width: 900 }}" alt="">
         {% endif %}
-
       </div>
     {% endfor %}
   </div>
 </section>
 
 <style>
+.ugc-section {
+  padding: 20px 0;
+}
+
+/* CONTAINER VERTICAL */
 .ugc-container {
   display: flex;
+  flex-direction: column;
   gap: 16px;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
+  max-height: 80vh;
+  overflow-y: auto;
+  scroll-snap-type: y mandatory;
   padding: 0 16px;
 }
 
+/* ITEM */
 .ugc-item {
-  flex: 0 0 80%;
-  scroll-snap-align: center;
+  flex: 0 0 auto;
+  scroll-snap-align: start;
 }
 
-.ugc-item img,
-.ugc-item video {
+/* IMAGE */
+.ugc-item img {
   width: 100%;
-  border-radius: 12px;
+  height: auto;
+  border-radius: 14px;
+  display: block;
+}
+
+/* SCROLLBAR CLEAN */
+.ugc-container::-webkit-scrollbar {
+  width: 4px;
+}
+
+.ugc-container::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 10px;
+}
+
+/* MOBILE FULLSCREEN FEEL */
+@media screen and (max-width: 768px) {
+  .ugc-item img {
+    border-radius: 12px;
+  }
 }
 </style>
 
 {% schema %}
 {
-  "name": "UGC Premium",
+  "name": "UGC Vertical",
   "settings": [],
   "blocks": [
     {
-      "type": "media",
-      "name": "Media",
+      "type": "image",
+      "name": "Image",
       "settings": [
         {
           "type": "image_picker",
@@ -54,7 +77,7 @@
   ],
   "presets": [
     {
-      "name": "UGC Premium"
+      "name": "UGC Vertical"
     }
   ]
 }
