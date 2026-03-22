@@ -18,7 +18,6 @@
   position: relative;
 }
 
-/* WRAPPER */
 .ugc-wrapper {
   overflow-x: auto;
   scroll-snap-type: x mandatory;
@@ -26,14 +25,12 @@
   padding: 0 20px;
 }
 
-/* TRACK */
 .ugc-track {
   display: flex;
   gap: 24px;
   align-items: center;
 }
 
-/* CARD */
 .ugc-card {
   flex: 0 0 auto;
   width: 75%;
@@ -43,7 +40,6 @@
   opacity: 0.6;
 }
 
-/* IMAGE */
 .ugc-card img {
   width: 100%;
   height: auto;
@@ -51,25 +47,15 @@
   display: block;
 }
 
-/* HOVER / FOCUS */
 .ugc-card:hover {
   transform: scale(1.05);
   opacity: 1;
 }
 
-/* MOBILE ACTIVE LOOK */
-@media (hover: none) {
-  .ugc-card {
-    opacity: 0.85;
-  }
-}
-
-/* SCROLLBAR CLEAN */
 .ugc-wrapper::-webkit-scrollbar {
   display: none;
 }
 
-/* 🔥 FADE LUXE CÔTÉS */
 .ugc-luxe::before,
 .ugc-luxe::after {
   content: "";
@@ -83,19 +69,12 @@
 
 .ugc-luxe::before {
   left: 0;
-  background: linear-gradient(to right, white, transparent);
+  background: linear-gradient(to right, #ffffff, transparent);
 }
 
 .ugc-luxe::after {
   right: 0;
-  background: linear-gradient(to left, white, transparent);
-}
-
-/* DESKTOP CENTER */
-@media screen and (min-width: 1024px) {
-  .ugc-wrapper {
-    padding: 0 80px;
-  }
+  background: linear-gradient(to left, #ffffff, transparent);
 }
 </style>
 
@@ -105,7 +84,7 @@
   "settings": [],
   "blocks": [
     {
-      "type": "image",
+      "type": "image_block",
       "name": "Image",
       "settings": [
         {
@@ -118,7 +97,12 @@
   ],
   "presets": [
     {
-      "name": "UGC Luxe"
+      "name": "UGC Luxe",
+      "blocks": [
+        {
+          "type": "image_block"
+        }
+      ]
     }
   ]
 }
