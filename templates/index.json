@@ -132,7 +132,7 @@
           "settings": {
             "title": "",
             "subheading": "Why Thousands of Women Can't Live Without It",
-            "content": "",
+            "content": "<p><strong>Why choose Luma-Body ?</strong></p>",
             "button_text": "",
             "button_url": "",
             "animate_impact_text": true,
@@ -234,34 +234,34 @@
         "subtitle": "Discover why thousands trust your brand."
       }
     },
-    "imageugc_NtPEeY": {
-      "type": "imageugc",
+    "image_ugc_ejfWjL": {
+      "type": "image-ugc",
       "blocks": {
-        "image_LWYR8w": {
+        "image_y7CJYe": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Design_sans_titre_2.png"
+            "image": "shopify://shop_images/Design_sans_titre_1.png"
           }
         },
-        "image_gca449": {
+        "image_znapGL": {
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/Design_sans_titre_3.png"
           }
         },
-        "image_FbQzaa": {
+        "image_rfx3pz": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Design_sans_titre_1.png"
+            "image": "shopify://shop_images/Design_sans_titre_2.png"
           }
         }
       },
       "block_order": [
-        "image_LWYR8w",
-        "image_gca449",
-        "image_FbQzaa"
+        "image_y7CJYe",
+        "image_znapGL",
+        "image_rfx3pz"
       ],
-      "name": "UGC Images",
+      "name": "UGC Luxe",
       "settings": {}
     },
     "featured-product": {
@@ -483,7 +483,7 @@
     "hot-spots",
     "ugc_video_mdFipD",
     "text_APmcUa",
-    "imageugc_NtPEeY",
+    "image_ugc_ejfWjL",
     "featured-product",
     "testimonials_VTFiqN",
     "faq"
