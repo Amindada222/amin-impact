@@ -165,8 +165,8 @@
       "type": "hot-spots",
       "settings": {
         "full_width": true,
-        "image": "shopify://shop_images/4_benefices_1.png",
-        "mobile_image": "shopify://shop_images/4_benefices_1.png",
+        "image": "shopify://shop_images/4_benefices_338a2d80-ac5b-4b30-b4dc-2a7268eb0313.png",
+        "mobile_image": "shopify://shop_images/4_benefices_ccf05116-bdc7-4e1c-83e2-59318af425d6.png",
         "title": "",
         "content": "",
         "button_text": "",
@@ -326,183 +326,73 @@
         "input_text_color": ""
       }
     },
-    "1774194584771c445a": {
-      "type": "apps",
+    "ugc_revweis_LrDDaw": {
+      "type": "ugc-revweis",
       "blocks": {
-        "judge_me_reviews_testimonials_carousel_xAgqRB": {
-          "type": "shopify://apps/judge-me-reviews/blocks/testimonials_carousel/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+        "review_t8mVUJ": {
+          "type": "review",
           "settings": {
-            "show_sample_reviews": true,
-            "reviews_selection": "all",
-            "products": [],
-            "star_rating": "all",
-            "max_reviews": 20,
-            "quote_marks_size": "small",
-            "product_name_text_size": "small",
-            "verified_badge_style": "icon",
-            "card_height": "medium",
-            "text_size": "small",
-            "stars_size": "medium",
-            "arrows_position": "bottom",
-            "max_width": 1100,
-            "corner_styling": "soft",
-            "quote_marks_style": "serif",
-            "card_color": "#F9F9F9",
-            "stars_and_quote_marks_color": "#108474",
-            "text_color": "#000000",
-            "arrows_color": "#000000",
-            "show_border": false,
-            "border_color": "#108474",
-            "show_drop_shadow": false,
-            "transition_speed": 5,
-            "header_text": "Customers are saying",
-            "show_average_rating": true
+            "author": "Émilie D.",
+            "verified": true,
+            "rating": 5,
+            "content": "C'est tellement mieux que mon ancien lisseur ! Mes cheveux sont parfaits en 5 minutes.",
+            "date": "8 janvier 2025"
+          }
+        },
+        "review_AxTcq6": {
+          "type": "review",
+          "settings": {
+            "author": "Emma D.",
+            "verified": true,
+            "rating": 5,
+            "content": "Il fonctionne super bien, j'adore pouvoir l'emporter partout où je vais. La charge tient longtemps, donc pas besoin de le recharger constamment.",
+            "date": "15 janvier 2025"
+          }
+        },
+        "review_B8gVT8": {
+          "type": "review",
+          "settings": {
+            "author": "Agathe T.",
+            "verified": true,
+            "rating": 5,
+            "content": "Cette brosse est parfaite pour une retouche rapide sur mes cheveux fins.",
+            "date": "3 février 2025"
+          }
+        },
+        "review_KfcMV7": {
+          "type": "review",
+          "settings": {
+            "author": "Sarah M.",
+            "verified": true,
+            "rating": 5,
+            "content": "J'étais un peu sceptique en le commandant, mais il est classe. Tellement facile à utiliser, fonctionne bien, super pratique. On peut même le recharger dans la voiture.",
+            "date": "21 janvier 2025"
+          }
+        },
+        "review_YLLPkE": {
+          "type": "review",
+          "settings": {
+            "author": "Léa P.",
+            "verified": true,
+            "rating": 5,
+            "content": "Résultat bluffant dès la première utilisation ! Mes cheveux sont lisses et brillants comme après le salon.",
+            "date": "5 février 2025"
           }
         }
       },
       "block_order": [
-        "judge_me_reviews_testimonials_carousel_xAgqRB"
+        "review_t8mVUJ",
+        "review_AxTcq6",
+        "review_B8gVT8",
+        "review_KfcMV7",
+        "review_YLLPkE"
       ],
+      "name": "UGC Reviews",
       "settings": {
-        "full_width": true,
-        "remove_vertical_spacing": false,
-        "remove_horizontal_spacing": false,
-        "background": "",
-        "background_gradient": "",
-        "text_color": ""
-      }
-    },
-    "testimonials_VTFiqN": {
-      "type": "testimonials",
-      "blocks": {
-        "testimonial_meBgVP": {
-          "type": "testimonial",
-          "settings": {
-            "round_avatar": true,
-            "show_rating": true,
-            "rating": 4,
-            "author": "Lauren",
-            "title": "",
-            "content": "<p><br/>\"Living in LA, sandals are a year-round thing. My feet had to be on point at all times and I was spending a fortune at the salon. LumaSilk changed everything. Soft, smooth, beautiful feet every single day. Obsessed with this device!\"<br/><br/></p>"
-          }
-        },
-        "testimonial_yACRxy": {
-          "type": "testimonial",
-          "settings": {
-            "round_avatar": true,
-            "show_rating": true,
-            "rating": 4,
-            "author": "",
-            "title": "Testimonial",
-            "content": "<p>Share what your customers are saying about your products, customer service or shipping rates.</p>"
-          }
-        },
-        "testimonial_TDKFW3": {
-          "type": "testimonial",
-          "settings": {
-            "round_avatar": true,
-            "show_rating": true,
-            "rating": 4,
-            "author": "",
-            "title": "Testimonial",
-            "content": "<p>Share what your customers are saying about your products, customer service or shipping rates.</p>"
-          }
-        },
-        "testimonial_XPCNqi": {
-          "type": "testimonial",
-          "settings": {
-            "round_avatar": true,
-            "show_rating": true,
-            "rating": 4,
-            "author": "",
-            "title": "Testimonial",
-            "content": "<p>Share what your customers are saying about your products, customer service or shipping rates.</p>"
-          }
-        },
-        "testimonial_qLgLhJ": {
-          "type": "testimonial",
-          "settings": {
-            "round_avatar": true,
-            "show_rating": true,
-            "rating": 4,
-            "author": "Stephanie",
-            "title": "",
-            "content": "<p>\"I was skeptical but wow — after my first use I could already see AND feel the difference. The dead skin was gone and my heels felt incredibly smooth. Gentle enough for sensitive skin too. Already ordered one for my sister!\"</p>"
-          }
-        },
-        "testimonial_TX9p8z": {
-          "type": "testimonial",
-          "settings": {
-            "round_avatar": true,
-            "show_rating": true,
-            "rating": 5,
-            "author": "Patricia",
-            "title": "",
-            "content": "<p><br/>\"I'm on my feet 12 hours a day and my heels were always rough and painful. LumaSilk is now part of my Sunday self-care routine. It's quiet, rechargeable, and so easy. After one session my feet feel like I just left the spa.\"<br/><br/></p>"
-          }
-        },
-        "testimonial_GyYN7e": {
-          "type": "testimonial",
-          "settings": {
-            "image": "shopify://shop_images/Design_sans_titre_1.png",
-            "round_avatar": true,
-            "show_rating": true,
-            "rating": 4,
-            "author": "Jennifer",
-            "title": "",
-            "content": "<p><br/>\"I used to go to the nail salon every 3 weeks — it was expensive and exhausting. With LumaSilk, I get the same smooth results in 10 minutes at home. My heels have never looked this good. Total game changer for busy moms like me!\"<br/><br/></p>"
-          }
-        },
-        "testimonial_PeVrzk": {
-          "type": "testimonial",
-          "settings": {
-            "round_avatar": true,
-            "show_rating": true,
-            "rating": 5,
-            "author": "Ashley",
-            "title": "",
-            "content": "<p><br/>\"I was so embarrassed about my cracked heels. I avoided sandals for YEARS. After just 2 weeks with LumaSilk, my feet are completely smooth. I went to the beach last weekend and didn't think twice. I wish I found this sooner!\"<br/><br/></p>"
-          }
-        },
-        "testimonial_Fhgqjb": {
-          "type": "testimonial",
-          "settings": {
-            "round_avatar": true,
-            "show_rating": true,
-            "rating": 4,
-            "author": "Rachel",
-            "title": "",
-            "content": "<p><br/>\"I've tried pumice stones, foot files, expensive creams — nothing lasted. LumaSilk actually removes the dead skin and my moisturizer absorbs so much better now. My husband even noticed how soft my feet are. 10/10!\"<br/><br/></p>"
-          }
-        }
-      },
-      "block_order": [
-        "testimonial_meBgVP",
-        "testimonial_yACRxy",
-        "testimonial_TDKFW3",
-        "testimonial_XPCNqi",
-        "testimonial_qLgLhJ",
-        "testimonial_TX9p8z",
-        "testimonial_GyYN7e",
-        "testimonial_PeVrzk",
-        "testimonial_Fhgqjb"
-      ],
-      "name": "Testimonials",
-      "settings": {
-        "full_width": true,
-        "stack_testimonials": true,
-        "subheading": "",
-        "title": "Testimonials",
-        "content": "",
-        "link_url": "",
-        "link_text": "",
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": "",
-        "testimonial_card_background": "",
-        "testimonial_card_text_color": ""
+        "review_count": "37",
+        "review_label": "Avis",
+        "write_review_text": "Écrire un avis",
+        "write_review_url": ""
       }
     },
     "faq": {
@@ -567,8 +457,7 @@
     "text_APmcUa",
     "image_ugc_ejfWjL",
     "featured-product",
-    "1774194584771c445a",
-    "testimonials_VTFiqN",
+    "ugc_revweis_LrDDaw",
     "faq"
   ]
 }
