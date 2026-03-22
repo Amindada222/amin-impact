@@ -1,0 +1,420 @@
+{% comment %} UGC Reviews Section - Style Trustpilot {% endcomment %}
+
+<style>
+  .ugc-reviews-section {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  }
+
+  /* ===== HEADER ===== */
+  .ugc-reviews-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 28px;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .ugc-reviews-header-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .ugc-stars-global {
+    display: flex;
+    gap: 3px;
+  }
+
+  .ugc-star-global {
+    width: 32px;
+    height: 32px;
+    background: #00B67A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+  }
+
+  .ugc-star-global svg {
+    width: 20px;
+    height: 20px;
+    fill: white;
+  }
+
+  .ugc-review-count {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .ugc-review-count span {
+    color: #555;
+    font-weight: 400;
+  }
+
+  .ugc-header-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .ugc-write-btn {
+    padding: 10px 20px;
+    border: 1.5px solid #1a1a1a;
+    border-radius: 6px;
+    background: white;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    color: #1a1a1a;
+    text-decoration: none;
+    transition: all 0.2s;
+  }
+
+  .ugc-write-btn:hover {
+    background: #1a1a1a;
+    color: white;
+  }
+
+  .ugc-filter-btn {
+    width: 40px;
+    height: 40px;
+    border: 1.5px solid #ddd;
+    border-radius: 6px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  /* ===== MASONRY GRID ===== */
+  .ugc-masonry-grid {
+    columns: 4;
+    column-gap: 16px;
+  }
+
+  @media (max-width: 1100px) {
+    .ugc-masonry-grid { columns: 3; }
+  }
+
+  @media (max-width: 768px) {
+    .ugc-masonry-grid { columns: 2; }
+  }
+
+  @media (max-width: 480px) {
+    .ugc-masonry-grid { columns: 1; }
+  }
+
+  /* ===== CARD ===== */
+  .ugc-card {
+    break-inside: avoid;
+    margin-bottom: 16px;
+    background: #fff;
+    border: 1px solid #e8e8e8;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .ugc-card-image {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    max-height: 320px;
+  }
+
+  .ugc-card-body {
+    padding: 14px 16px 16px;
+  }
+
+  .ugc-card-author {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+  }
+
+  .ugc-card-name {
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: #1a1a1a;
+  }
+
+  .ugc-verified {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: #555;
+    font-size: 0.82rem;
+  }
+
+  .ugc-verified svg {
+    width: 15px;
+    height: 15px;
+    fill: #555;
+  }
+
+  .ugc-card-stars {
+    display: flex;
+    gap: 2px;
+    margin-bottom: 10px;
+  }
+
+  .ugc-card-star {
+    width: 20px;
+    height: 20px;
+    background: #00B67A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+  }
+
+  .ugc-card-star svg {
+    width: 13px;
+    height: 13px;
+    fill: white;
+  }
+
+  .ugc-card-text {
+    font-size: 0.88rem;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+  }
+
+  .ugc-card-date {
+    font-size: 0.78rem;
+    color: #999;
+    margin-top: 10px;
+  }
+</style>
+
+<div class="ugc-reviews-section">
+
+  <!-- HEADER -->
+  <div class="ugc-reviews-header">
+    <div class="ugc-reviews-header-left">
+      <!-- Étoiles globales -->
+      <div class="ugc-stars-global">
+        {% for i in (1..5) %}
+          <div class="ugc-star-global">
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+        {% endfor %}
+      </div>
+      <div class="ugc-review-count">
+        {{ section.settings.review_count }} <span>{{ section.settings.review_label }}</span> ▾
+      </div>
+    </div>
+
+    <div class="ugc-header-actions">
+      <a href="{{ section.settings.write_review_url }}" class="ugc-write-btn">{{ section.settings.write_review_text }}</a>
+      <div class="ugc-filter-btn">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="2"><line x1="4" y1="6" x2="20" y2="6"/><line x1="8" y1="12" x2="16" y2="12"/><line x1="11" y1="18" x2="13" y2="18"/></svg>
+      </div>
+    </div>
+  </div>
+
+  <!-- MASONRY GRID -->
+  <div class="ugc-masonry-grid">
+    {% for block in section.blocks %}
+      <div class="ugc-card" {{ block.shopify_attributes }}>
+
+        {% if block.settings.image != blank %}
+          <img
+            class="ugc-card-image"
+            src="{{ block.settings.image | img_url: '600x' }}"
+            alt="Avis de {{ block.settings.author }}"
+            loading="lazy"
+          >
+        {% endif %}
+
+        <div class="ugc-card-body">
+          <!-- Auteur + vérifié -->
+          <div class="ugc-card-author">
+            <span class="ugc-card-name">{{ block.settings.author }}</span>
+            {% if block.settings.verified %}
+              <span class="ugc-verified">
+                <svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" stroke="#555" stroke-width="2" fill="none"/></svg>
+                Vérifié
+              </span>
+            {% endif %}
+          </div>
+
+          <!-- Étoiles -->
+          <div class="ugc-card-stars">
+            {% assign rating = block.settings.rating | default: 5 %}
+            {% for i in (1..rating) %}
+              <div class="ugc-card-star">
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              </div>
+            {% endfor %}
+          </div>
+
+          <!-- Texte -->
+          <p class="ugc-card-text">{{ block.settings.content }}</p>
+
+          <!-- Date -->
+          {% if block.settings.date != blank %}
+            <p class="ugc-card-date">{{ block.settings.date }}</p>
+          {% endif %}
+        </div>
+
+      </div>
+    {% endfor %}
+  </div>
+
+</div>
+
+{% schema %}
+{
+  "name": "UGC Reviews",
+  "settings": [
+    {
+      "type": "text",
+      "id": "review_count",
+      "label": "Nombre d'avis",
+      "default": "37"
+    },
+    {
+      "type": "text",
+      "id": "review_label",
+      "label": "Label avis",
+      "default": "Avis"
+    },
+    {
+      "type": "text",
+      "id": "write_review_text",
+      "label": "Texte bouton",
+      "default": "Écrire un avis"
+    },
+    {
+      "type": "url",
+      "id": "write_review_url",
+      "label": "Lien bouton"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "review",
+      "name": "Avis",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Photo client"
+        },
+        {
+          "type": "text",
+          "id": "author",
+          "label": "Nom",
+          "default": "Sophie M."
+        },
+        {
+          "type": "checkbox",
+          "id": "verified",
+          "label": "Vérifié",
+          "default": true
+        },
+        {
+          "type": "range",
+          "id": "rating",
+          "label": "Note",
+          "min": 1,
+          "max": 5,
+          "step": 1,
+          "default": 5
+        },
+        {
+          "type": "textarea",
+          "id": "content",
+          "label": "Commentaire",
+          "default": "Produit incroyable, je recommande vivement !"
+        },
+        {
+          "type": "text",
+          "id": "date",
+          "label": "Date",
+          "default": "12 janvier 2025"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "UGC Reviews",
+      "blocks": [
+        {
+          "type": "review",
+          "settings": {
+            "author": "Émilie D.",
+            "verified": true,
+            "rating": 5,
+            "content": "C'est tellement mieux que mon ancien lisseur ! Mes cheveux sont parfaits en 5 minutes.",
+            "date": "8 janvier 2025"
+          }
+        },
+        {
+          "type": "review",
+          "settings": {
+            "author": "Emma D.",
+            "verified": true,
+            "rating": 5,
+            "content": "Il fonctionne super bien, j'adore pouvoir l'emporter partout où je vais. La charge tient longtemps, donc pas besoin de le recharger constamment.",
+            "date": "15 janvier 2025"
+          }
+        },
+        {
+          "type": "review",
+          "settings": {
+            "author": "Agathe T.",
+            "verified": true,
+            "rating": 5,
+            "content": "Cette brosse est parfaite pour une retouche rapide sur mes cheveux fins.",
+            "date": "3 février 2025"
+          }
+        },
+        {
+          "type": "review",
+          "settings": {
+            "author": "Sarah M.",
+            "verified": true,
+            "rating": 5,
+            "content": "J'étais un peu sceptique en le commandant, mais il est classe. Tellement facile à utiliser, fonctionne bien, super pratique. On peut même le recharger dans la voiture.",
+            "date": "21 janvier 2025"
+          }
+        },
+        {
+          "type": "review",
+          "settings": {
+            "author": "Léa P.",
+            "verified": true,
+            "rating": 5,
+            "content": "Résultat bluffant dès la première utilisation ! Mes cheveux sont lisses et brillants comme après le salon.",
+            "date": "5 février 2025"
+          }
+        },
+        {
+          "type": "review",
+          "settings": {
+            "author": "Camille R.",
+            "verified": true,
+            "rating": 5,
+            "content": "J'ai offert le même à ma mère et elle en est folle. Un cadeau parfait !",
+            "date": "18 janvier 2025"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
