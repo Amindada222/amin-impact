@@ -88,42 +88,6 @@
       "name": "Logo défilant luxe",
       "settings": {}
     },
-    "impact_text_arimNn": {
-      "type": "impact-text",
-      "blocks": {
-        "item_Emi8ip": {
-          "type": "item",
-          "settings": {
-            "title": "",
-            "subheading": "Why Thousands of Women Can't Live Without It",
-            "content": "<p><strong>Why choose Luma-Body ?</strong></p>",
-            "button_text": "",
-            "button_url": "",
-            "animate_impact_text": true,
-            "animate_impact_text_duration": 2.4
-          }
-        }
-      },
-      "block_order": [
-        "item_Emi8ip"
-      ],
-      "name": "Impact text",
-      "settings": {
-        "full_width": true,
-        "stack_mobile": true,
-        "text_alignment": "center",
-        "impact_text_style": "fill",
-        "text_divider": "none",
-        "impact_text_size_ratio": 1,
-        "background": "",
-        "background_gradient": "",
-        "heading_text_color": "",
-        "heading_gradient": "",
-        "text_color": "",
-        "button_background": "",
-        "button_text_color": ""
-      }
-    },
     "ugc_video_mdFipD": {
       "type": "ugc-video",
       "blocks": {
@@ -160,6 +124,42 @@
       ],
       "name": "UGC vidéos",
       "settings": {}
+    },
+    "impact_text_arimNn": {
+      "type": "impact-text",
+      "blocks": {
+        "item_Emi8ip": {
+          "type": "item",
+          "settings": {
+            "title": "",
+            "subheading": "Why Thousands of Women Can't Live Without It",
+            "content": "<p><strong>Why choose Luma-Body ?</strong></p>",
+            "button_text": "",
+            "button_url": "",
+            "animate_impact_text": true,
+            "animate_impact_text_duration": 2.4
+          }
+        }
+      },
+      "block_order": [
+        "item_Emi8ip"
+      ],
+      "name": "Impact text",
+      "settings": {
+        "full_width": true,
+        "stack_mobile": true,
+        "text_alignment": "center",
+        "impact_text_style": "fill",
+        "text_divider": "none",
+        "impact_text_size_ratio": 1,
+        "background": "",
+        "background_gradient": "",
+        "heading_text_color": "",
+        "heading_gradient": "",
+        "text_color": "",
+        "button_background": "",
+        "button_text_color": ""
+      }
     },
     "hot-spots": {
       "type": "hot-spots",
@@ -332,12 +332,13 @@
         "testimonial_GyYN7e": {
           "type": "testimonial",
           "settings": {
+            "image": "shopify://shop_images/Design_sans_titre_1.png",
             "round_avatar": true,
             "show_rating": true,
             "rating": 4,
-            "author": "John S.",
-            "title": "Testimonial 1",
-            "content": "<p>Share what your customers are saying about your products, customer service or shipping rates.</p>"
+            "author": "Jennifer",
+            "title": "",
+            "content": "<p><br/>\"I used to go to the nail salon every 3 weeks — it was expensive and exhausting. With LumaSilk, I get the same smooth results in 10 minutes at home. My heels have never looked this good. Total game changer for busy moms like me!\"<br/><br/></p>"
           }
         },
         "testimonial_PeVrzk": {
