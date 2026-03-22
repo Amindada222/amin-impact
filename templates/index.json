@@ -329,6 +329,72 @@
     "testimonials_VTFiqN": {
       "type": "testimonials",
       "blocks": {
+        "testimonial_meBgVP": {
+          "type": "testimonial",
+          "settings": {
+            "round_avatar": true,
+            "show_rating": true,
+            "rating": 4,
+            "author": "",
+            "title": "Testimonial",
+            "content": "<p>Share what your customers are saying about your products, customer service or shipping rates.</p>"
+          }
+        },
+        "testimonial_yACRxy": {
+          "type": "testimonial",
+          "settings": {
+            "round_avatar": true,
+            "show_rating": true,
+            "rating": 4,
+            "author": "",
+            "title": "Testimonial",
+            "content": "<p>Share what your customers are saying about your products, customer service or shipping rates.</p>"
+          }
+        },
+        "testimonial_TDKFW3": {
+          "type": "testimonial",
+          "settings": {
+            "round_avatar": true,
+            "show_rating": true,
+            "rating": 4,
+            "author": "",
+            "title": "Testimonial",
+            "content": "<p>Share what your customers are saying about your products, customer service or shipping rates.</p>"
+          }
+        },
+        "testimonial_XPCNqi": {
+          "type": "testimonial",
+          "settings": {
+            "round_avatar": true,
+            "show_rating": true,
+            "rating": 4,
+            "author": "",
+            "title": "Testimonial",
+            "content": "<p>Share what your customers are saying about your products, customer service or shipping rates.</p>"
+          }
+        },
+        "testimonial_qLgLhJ": {
+          "type": "testimonial",
+          "settings": {
+            "round_avatar": true,
+            "show_rating": true,
+            "rating": 4,
+            "author": "",
+            "title": "Testimonial",
+            "content": "<p>\"I was skeptical but wow — after my first use I could already see AND feel the difference. The dead skin was gone and my heels felt incredibly smooth. Gentle enough for sensitive skin too. Already ordered one for my sister!\"</p>"
+          }
+        },
+        "testimonial_TX9p8z": {
+          "type": "testimonial",
+          "settings": {
+            "round_avatar": true,
+            "show_rating": true,
+            "rating": 4,
+            "author": "Patricia",
+            "title": "",
+            "content": "<p><br/>\"I'm on my feet 12 hours a day and my heels were always rough and painful. LumaSilk is now part of my Sunday self-care routine. It's quiet, rechargeable, and so easy. After one session my feet feel like I just left the spa.\"<br/><br/></p>"
+          }
+        },
         "testimonial_GyYN7e": {
           "type": "testimonial",
           "settings": {
@@ -347,9 +413,9 @@
             "round_avatar": true,
             "show_rating": true,
             "rating": 5,
-            "author": "Mary U.",
-            "title": "Testimonial 2",
-            "content": "<p>Share what your customers are saying about your products, customer service or shipping rates.</p>"
+            "author": "Ashley",
+            "title": "",
+            "content": "<p><br/>\"I was so embarrassed about my cracked heels. I avoided sandals for YEARS. After just 2 weeks with LumaSilk, my feet are completely smooth. I went to the beach last weekend and didn't think twice. I wish I found this sooner!\"<br/><br/></p>"
           }
         },
         "testimonial_Fhgqjb": {
@@ -358,13 +424,19 @@
             "round_avatar": true,
             "show_rating": true,
             "rating": 4,
-            "author": "Joshua A.",
-            "title": "Testimonial 3",
-            "content": "<p>Share what your customers are saying about your products, customer service or shipping rates.</p>"
+            "author": "Rachel",
+            "title": "",
+            "content": "<p><br/>\"I've tried pumice stones, foot files, expensive creams — nothing lasted. LumaSilk actually removes the dead skin and my moisturizer absorbs so much better now. My husband even noticed how soft my feet are. 10/10!\"<br/><br/></p>"
           }
         }
       },
       "block_order": [
+        "testimonial_meBgVP",
+        "testimonial_yACRxy",
+        "testimonial_TDKFW3",
+        "testimonial_XPCNqi",
+        "testimonial_qLgLhJ",
+        "testimonial_TX9p8z",
         "testimonial_GyYN7e",
         "testimonial_PeVrzk",
         "testimonial_Fhgqjb"
