@@ -51,16 +51,40 @@
         "background_gradient": "linear-gradient(60deg, rgba(60, 65, 68, 1), rgba(23, 29, 33, 1) 98%)"
       }
     },
-    "rich_text_4YTbd9": {
-      "type": "rich-text",
-      "name": "Rich text",
+    "impact_text_CnFNAc": {
+      "type": "impact-text",
+      "blocks": {
+        "item_hXY3Rm": {
+          "type": "item",
+          "settings": {
+            "title": "",
+            "subheading": "",
+            "content": "",
+            "button_text": "",
+            "button_url": "",
+            "animate_impact_text": false,
+            "animate_impact_text_duration": 2
+          }
+        }
+      },
+      "block_order": [
+        "item_hXY3Rm"
+      ],
+      "name": "Impact text",
       "settings": {
-        "full_width": false,
-        "content_width": "small",
-        "text_position": "center",
-        "background": "#ffffff",
-        "background_gradient": "radial-gradient(rgba(255, 255, 255, 1) 100%, rgba(247, 197, 204, 1) 100%)",
-        "text_color": ""
+        "full_width": true,
+        "stack_mobile": true,
+        "text_alignment": "center",
+        "impact_text_style": "fill",
+        "text_divider": "circle",
+        "impact_text_size_ratio": 1,
+        "background": "",
+        "background_gradient": "",
+        "heading_text_color": "",
+        "heading_gradient": "",
+        "text_color": "",
+        "button_background": "",
+        "button_text_color": ""
       }
     },
     "logo_marque_kpGUQP": {
@@ -453,7 +477,7 @@
   },
   "order": [
     "slideshow",
-    "rich_text_4YTbd9",
+    "impact_text_CnFNAc",
     "logo_marque_kpGUQP",
     "impact_text_arimNn",
     "hot-spots",
