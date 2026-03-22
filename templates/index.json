@@ -17,7 +17,7 @@
           "settings": {
             "image": "shopify://shop_images/FLUX-2026-03-18-20-16-01.jpg",
             "mobile_image": "shopify://shop_images/FLUX-2026-03-18-20-16-01.jpg",
-            "content_max_width": 780,
+            "content_max_width": 400,
             "mobile_text_position": "place-self-center text-center",
             "desktop_text_position": "sm:place-self-center sm:text-center",
             "subheading": "",
