@@ -1,0 +1,125 @@
+<section class="ugc-luxe">
+  <div class="ugc-wrapper">
+    <div class="ugc-track">
+      {% for block in section.blocks %}
+        <div class="ugc-card" {{ block.shopify_attributes }}>
+          {% if block.settings.image != blank %}
+            <img src="{{ block.settings.image | image_url: width: 1200 }}" alt="">
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<style>
+.ugc-luxe {
+  padding: 60px 0;
+  position: relative;
+}
+
+/* WRAPPER */
+.ugc-wrapper {
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding: 0 20px;
+}
+
+/* TRACK */
+.ugc-track {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+/* CARD */
+.ugc-card {
+  flex: 0 0 auto;
+  width: 75%;
+  max-width: 340px;
+  scroll-snap-align: center;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  opacity: 0.6;
+}
+
+/* IMAGE */
+.ugc-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 18px;
+  display: block;
+}
+
+/* HOVER / FOCUS */
+.ugc-card:hover {
+  transform: scale(1.05);
+  opacity: 1;
+}
+
+/* MOBILE ACTIVE LOOK */
+@media (hover: none) {
+  .ugc-card {
+    opacity: 0.85;
+  }
+}
+
+/* SCROLLBAR CLEAN */
+.ugc-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+/* 🔥 FADE LUXE CÔTÉS */
+.ugc-luxe::before,
+.ugc-luxe::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 80px;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.ugc-luxe::before {
+  left: 0;
+  background: linear-gradient(to right, white, transparent);
+}
+
+.ugc-luxe::after {
+  right: 0;
+  background: linear-gradient(to left, white, transparent);
+}
+
+/* DESKTOP CENTER */
+@media screen and (min-width: 1024px) {
+  .ugc-wrapper {
+    padding: 0 80px;
+  }
+}
+</style>
+
+{% schema %}
+{
+  "name": "UGC Luxe",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "image",
+      "name": "Image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "UGC Luxe"
+    }
+  ]
+}
+{% endschema %}
