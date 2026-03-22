@@ -1,59 +1,107 @@
-<section class="ugc-images-section">
-  <div class="ugc-container">
-    {% for block in section.blocks %}
-      <div class="ugc-image-card" {{ block.shopify_attributes }}>
-        
-        {% if block.settings.image != blank %}
-          <img 
-            src="{{ block.settings.image | image_url: width: 800 }}" 
-            alt="ugc image"
-          >
-        {% endif %}
-
-      </div>
-    {% endfor %}
+<section class="ugc-luxe">
+  <div class="ugc-wrapper">
+    <div class="ugc-track">
+      {% for block in section.blocks %}
+        <div class="ugc-card" {{ block.shopify_attributes }}>
+          {% if block.settings.image != blank %}
+            <img src="{{ block.settings.image | image_url: width: 1200 }}" alt="">
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
   </div>
 </section>
 
 <style>
-.ugc-images-section {
-  padding: 60px 20px;
-  background: #f5f5f5;
+.ugc-luxe {
+  padding: 60px 0;
+  position: relative;
 }
 
-.ugc-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+/* WRAPPER */
+.ugc-wrapper {
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding: 0 20px;
+}
+
+/* TRACK */
+.ugc-track {
+  display: flex;
   gap: 24px;
-  max-width: 1100px;
-  margin: 0 auto;
+  align-items: center;
 }
 
-.ugc-image-card {
-  border-radius: 16px;
-  overflow: hidden;
+/* CARD */
+.ugc-card {
+  flex: 0 0 auto;
+  width: 75%;
+  max-width: 340px;
+  scroll-snap-align: center;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  opacity: 0.6;
 }
 
-.ugc-image-card img {
+/* IMAGE */
+.ugc-card img {
   width: 100%;
   height: auto;
+  border-radius: 18px;
   display: block;
-  border-radius: 16px;
 }
 
-/* ✅ MOBILE */
-@media screen and (max-width: 768px) {
-  .ugc-container {
-    grid-template-columns: 1fr;
+/* HOVER / FOCUS */
+.ugc-card:hover {
+  transform: scale(1.05);
+  opacity: 1;
+}
+
+/* MOBILE ACTIVE LOOK */
+@media (hover: none) {
+  .ugc-card {
+    opacity: 0.85;
+  }
+}
+
+/* SCROLLBAR CLEAN */
+.ugc-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+/* 🔥 FADE LUXE CÔTÉS */
+.ugc-luxe::before,
+.ugc-luxe::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 80px;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.ugc-luxe::before {
+  left: 0;
+  background: linear-gradient(to right, white, transparent);
+}
+
+.ugc-luxe::after {
+  right: 0;
+  background: linear-gradient(to left, white, transparent);
+}
+
+/* DESKTOP CENTER */
+@media screen and (min-width: 1024px) {
+  .ugc-wrapper {
+    padding: 0 80px;
   }
 }
 </style>
 
 {% schema %}
 {
-  "name": "UGC Images",
-  "tag": "section",
-  "class": "ugc-images",
+  "name": "UGC Luxe",
   "settings": [],
   "blocks": [
     {
@@ -63,19 +111,14 @@
         {
           "type": "image_picker",
           "id": "image",
-          "label": "Choisir une image"
+          "label": "Image"
         }
       ]
     }
   ],
   "presets": [
     {
-      "name": "UGC Images",
-      "blocks": [
-        { "type": "image" },
-        { "type": "image" },
-        { "type": "image" }
-      ]
+      "name": "UGC Luxe"
     }
   ]
 }
