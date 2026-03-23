@@ -1,0 +1,239 @@
+<style>
+  .comparison-wrapper {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background: #fff;
+  }
+
+  .comparison-title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #1a1a1a;
+  }
+
+  .comparison-table {
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    background: #fff;
+    border: 1px solid #f0f0f0;
+  }
+
+  /* HEADER */
+  .comp-header {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    align-items: end;
+    padding: 0 0 0 20px;
+  }
+
+  .comp-header .empty {
+    padding: 20px 0;
+  }
+
+  .comp-header .col-brand {
+    background: #FF1E8C;
+    border-radius: 20px 20px 0 0;
+    text-align: center;
+    padding: 25px 10px 15px;
+    color: white;
+  }
+
+  .comp-header .col-brand .brand-name {
+    font-size: 22px;
+    font-weight: 800;
+    font-style: italic;
+  }
+
+  .comp-header .col-other {
+    text-align: center;
+    padding: 15px 5px;
+    font-size: 13px;
+    color: #888;
+    font-weight: 500;
+    line-height: 1.3;
+  }
+
+  /* ROWS */
+  .comp-row {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    align-items: center;
+    padding: 0 0 0 20px;
+    border-top: 1px solid #f0f0f0;
+  }
+
+  .comp-row:last-child {
+    border-radius: 0 0 20px 20px;
+    overflow: hidden;
+  }
+
+  .comp-row .row-label {
+    padding: 18px 10px 18px 0;
+    font-size: 15px;
+    color: #1a1a1a;
+    font-weight: 500;
+  }
+
+  .comp-row .cell {
+    text-align: center;
+    padding: 18px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .comp-row .cell.brand-cell {
+    background: #FF1E8C;
+  }
+
+  /* ICONS */
+  .icon-check-brand {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 2px solid rgba(255,255,255,0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 14px;
+  }
+
+  .icon-check-outline {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 2px solid #1a1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1a1a1a;
+    font-size: 14px;
+  }
+
+  .icon-cross {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: #e8e8e8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #aaa;
+    font-size: 14px;
+  }
+
+  /* RESPONSIVE */
+  @media (max-width: 400px) {
+    .comp-row .row-label {
+      font-size: 13px;
+    }
+    .comp-header .col-brand .brand-name {
+      font-size: 18px;
+    }
+  }
+</style>
+
+<div class="comparison-wrapper">
+
+  <!-- TITRE — MODIFIABLE -->
+  <h2 class="comparison-title">Why choose us?</h2>
+
+  <div class="comparison-table">
+
+    <!-- HEADER — MODIFIE LES NOMS ICI -->
+    <div class="comp-header">
+      <div class="empty"></div>
+      <div class="col-brand">
+        <!-- TON NOM DE MARQUE ICI -->
+        <span class="brand-name">nuvé</span>
+      </div>
+      <!-- NOM COLONNE 2 -->
+      <div class="col-other">Other<br>tools</div>
+      <!-- NOM COLONNE 3 -->
+      <div class="col-other">Nail<br>salons</div>
+    </div>
+
+    <!-- ===================== -->
+    <!-- LIGNES — MODIFIABLES  -->
+    <!-- ===================== -->
+
+    <!-- LIGNE 1 -->
+    <div class="comp-row">
+      <div class="row-label">Quick results</div>
+      <div class="cell brand-cell">
+        <div class="icon-check-brand">✓</div>
+      </div>
+      <div class="cell">
+        <!-- ✓ = icon-check-outline | ✗ = icon-cross -->
+        <div class="icon-cross">✕</div>
+      </div>
+      <div class="cell">
+        <div class="icon-check-outline">✓</div>
+      </div>
+    </div>
+
+    <!-- LIGNE 2 -->
+    <div class="comp-row">
+      <div class="row-label">Painless</div>
+      <div class="cell brand-cell">
+        <div class="icon-check-brand">✓</div>
+      </div>
+      <div class="cell">
+        <div class="icon-cross">✕</div>
+      </div>
+      <div class="cell">
+        <div class="icon-check-outline">✓</div>
+      </div>
+    </div>
+
+    <!-- LIGNE 3 -->
+    <div class="comp-row">
+      <div class="row-label">Easy to use</div>
+      <div class="cell brand-cell">
+        <div class="icon-check-brand">✓</div>
+      </div>
+      <div class="cell">
+        <div class="icon-cross">✕</div>
+      </div>
+      <div class="cell">
+        <div class="icon-check-outline">✓</div>
+      </div>
+    </div>
+
+    <!-- LIGNE 4 -->
+    <div class="comp-row">
+      <div class="row-label">Saves time</div>
+      <div class="cell brand-cell">
+        <div class="icon-check-brand">✓</div>
+      </div>
+      <div class="cell">
+        <div class="icon-cross">✕</div>
+      </div>
+      <div class="cell">
+        <div class="icon-cross">✕</div>
+      </div>
+    </div>
+
+    <!-- LIGNE 5 -->
+    <div class="comp-row">
+      <div class="row-label">Saves money</div>
+      <div class="cell brand-cell">
+        <div class="icon-check-brand">✓</div>
+      </div>
+      <div class="cell">
+        <div class="icon-check-outline">✓</div>
+      </div>
+      <div class="cell">
+        <div class="icon-cross">✕</div>
+      </div>
+    </div>
+
+  </div>
+</div>
