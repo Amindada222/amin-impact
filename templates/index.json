@@ -288,11 +288,12 @@
         "review_KfcMV7": {
           "type": "review",
           "settings": {
+            "image": "shopify://shop_images/cmn2z5xq8027pwsrki8rs659i.jpg",
             "author": "Sarah M.",
-            "verified": true,
+            "verified": false,
             "rating": 5,
-            "content": "J'étais un peu sceptique en le commandant, mais il est classe. Tellement facile à utiliser, fonctionne bien, super pratique. On peut même le recharger dans la voiture.",
-            "date": "21 janvier 2025"
+            "content": "Living in LA, sandals are a year-round thing. I was spending a fortune at the salon every month. LumaSilk changed everything. Soft, smooth, beautiful feet every single day. I'm completely obsessed with this device!",
+            "date": ""
           }
         },
         "review_YLLPkE": {
