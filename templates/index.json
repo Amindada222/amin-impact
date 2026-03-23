@@ -328,11 +328,23 @@
             "product": "{{section.settings.product}}",
             "manual_deal_block_id": ""
           }
+        },
+        "buy_buttons_6Gm6Et": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": true,
+            "show_gift_card_recipient": true,
+            "atc_button_background": "",
+            "atc_button_text_color": "",
+            "payment_button_background": "",
+            "payment_button_text_color": ""
+          }
         }
       },
       "block_order": [
         "title",
-        "kaching_bundles_app_block_NzELBw"
+        "kaching_bundles_app_block_NzELBw",
+        "buy_buttons_6Gm6Et"
       ],
       "settings": {
         "full_width": false,
