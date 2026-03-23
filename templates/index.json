@@ -258,6 +258,17 @@
     "ugc_revweis_LrDDaw": {
       "type": "ugc-revweis",
       "blocks": {
+        "review_AxTcq6": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/Capture_d_ecran_2026-03-23_223338.png",
+            "author": "Emma D.",
+            "verified": false,
+            "rating": 5,
+            "content": "\"I bought LumaSilk as a little treat for myself. Best decision ever. Elegant, powerful, and so simple to use. I use it twice a week and my feet stay smooth all the time. No more hiding under socks — summer here I come!\"",
+            "date": ""
+          }
+        },
         "review_kVUnN9": {
           "type": "review",
           "settings": {
@@ -269,14 +280,15 @@
             "date": ""
           }
         },
-        "review_AxTcq6": {
+        "review_fDFjkQ": {
           "type": "review",
           "settings": {
-            "author": "Emma D.",
-            "verified": false,
+            "image": "shopify://shop_images/Capture_d_ecran_2026-03-23_223319.png",
+            "author": "Jennifer K",
+            "verified": true,
             "rating": 5,
-            "content": "\"I bought LumaSilk as a little treat for myself. Best decision ever. Elegant, powerful, and so simple to use. I use it twice a week and my feet stay smooth all the time. No more hiding under socks — summer here I come!\"",
-            "date": ""
+            "content": "\"I used to spend $60 every 3 weeks at the nail salon. Now I do it myself in 10 minutes and honestly? The results are better. My husband even noticed.\"",
+            "date": "12 janvier 2025"
           }
         },
         "review_h4DWgg": {
@@ -288,6 +300,17 @@
             "rating": 5,
             "content": "\"I used to go to the nail salon every 3 weeks — expensive and exhausting. With LumaSilk, I get the same smooth results in 10 minutes at home. My heels have never looked this good. Total game changer for busy moms like me!\"",
             "date": ""
+          }
+        },
+        "review_4jpdQX": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/Capture_d_ecran_2026-03-23_223331.png",
+            "author": "Michelle T",
+            "verified": true,
+            "rating": 5,
+            "content": "I bought this as a treat for myself and it turned into my favorite part of my Sunday self-care routine. My feet have never looked this good.",
+            "date": "12 janvier 2025"
           }
         },
         "review_B8gVT8": {
@@ -325,9 +348,11 @@
         }
       },
       "block_order": [
-        "review_kVUnN9",
         "review_AxTcq6",
+        "review_kVUnN9",
+        "review_fDFjkQ",
         "review_h4DWgg",
+        "review_4jpdQX",
         "review_B8gVT8",
         "review_KfcMV7",
         "review_t8mVUJ"
