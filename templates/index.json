@@ -360,7 +360,7 @@
       "name": "UGC Reviews",
       "settings": {
         "review_count": "25483",
-        "review_label": "",
+        "review_label": "reviews",
         "write_review_text": "",
         "write_review_url": ""
       }
