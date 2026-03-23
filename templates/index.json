@@ -276,11 +276,12 @@
         "review_B8gVT8": {
           "type": "review",
           "settings": {
+            "image": "shopify://shop_images/cmn2z9o9q0284wsrk4tahnvef.jpg",
             "author": "Agathe T.",
-            "verified": true,
+            "verified": false,
             "rating": 5,
-            "content": "Cette brosse est parfaite pour une retouche rapide sur mes cheveux fins.",
-            "date": "3 février 2025"
+            "content": "I'm on my feet 12 hours a day and my heels were always rough and painful. LumaSilk is now part of my Sunday self-care routine. It's quiet, rechargeable, and so easy to use. After one session my feet feel like I just left the spa.",
+            "date": ""
           }
         },
         "review_KfcMV7": {
