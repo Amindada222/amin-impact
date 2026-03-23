@@ -307,8 +307,8 @@
       ],
       "name": "UGC Reviews",
       "settings": {
-        "review_count": "",
-        "review_label": "Avis",
+        "review_count": "25483",
+        "review_label": "",
         "write_review_text": "Écrire un avis",
         "write_review_url": ""
       }
