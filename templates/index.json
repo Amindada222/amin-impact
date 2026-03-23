@@ -394,13 +394,21 @@
             "title": "Will it work on severely dry or cracked heels?",
             "content": "<p>Yes — LumaSilk is specifically engineered for <strong>tough, dry skin and deep cracks</strong>, not just light maintenance. The high-speed micro-abrasion technology targets even the most stubborn calluses safely and effectively.</p>"
           }
+        },
+        "item_dnzf6W": {
+          "type": "item",
+          "settings": {
+            "title": "Is it waterproof? Can I use it in the shower or bath?",
+            "content": "<p><br/>LumaSilk is <strong>fully waterproof</strong> — use it dry or wet, in the shower or while relaxing in a bath. It's cordless and rechargeable, so no tangled wires, no hassle. Just grab it and go. 🚿<br/><br/></p>"
+          }
         }
       },
       "block_order": [
         "166442457738b23caf-0",
         "166442457738b23caf-1",
         "166442457738b23caf-2",
-        "item_UiHL7D"
+        "item_UiHL7D",
+        "item_dnzf6W"
       ],
       "settings": {
         "full_width": false,
