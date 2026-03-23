@@ -253,17 +253,6 @@
             "date": ""
           }
         },
-        "review_t8mVUJ": {
-          "type": "review",
-          "settings": {
-            "image": "shopify://shop_images/cmn2z6tlv027uwsrk5bjbvgmf.jpg",
-            "author": "Émilie D.",
-            "verified": true,
-            "rating": 5,
-            "content": "C'est tellement mieux que mon ancien lisseur ! Mes cheveux sont parfaits en 5 minutes.",
-            "date": "8 janvier 2025"
-          }
-        },
         "review_AxTcq6": {
           "type": "review",
           "settings": {
@@ -296,25 +285,25 @@
             "date": ""
           }
         },
-        "review_YLLPkE": {
+        "review_t8mVUJ": {
           "type": "review",
           "settings": {
-            "author": "Léa P.",
-            "verified": true,
+            "image": "shopify://shop_images/cmn2z6tlv027uwsrk5bjbvgmf.jpg",
+            "author": "Émilie D.",
+            "verified": false,
             "rating": 5,
-            "content": "Résultat bluffant dès la première utilisation ! Mes cheveux sont lisses et brillants comme après le salon.",
-            "date": "5 février 2025"
+            "content": "Okay that sounds dramatic but I genuinely teared up. I've had cracked, painful heels my whole life and nothing ever worked. After one LumaSilk session the difference was unreal. I feel so much better about myself. Thank you!",
+            "date": ""
           }
         }
       },
       "block_order": [
         "review_h4DWgg",
         "review_kVUnN9",
-        "review_t8mVUJ",
         "review_AxTcq6",
         "review_B8gVT8",
         "review_KfcMV7",
-        "review_YLLPkE"
+        "review_t8mVUJ"
       ],
       "name": "UGC Reviews",
       "settings": {
