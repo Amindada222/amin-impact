@@ -387,12 +387,20 @@
             "title": "Is it worth it compared to a salon pedicure?",
             "content": "<p>The average salon pedicure costs ** 45– 80** every few weeks. LumaSilk pays for itself after just <strong>one use</strong> — and you get salon-quality results from your couch, on your schedule, without the awkward small talk. 😄</p>"
           }
+        },
+        "item_UiHL7D": {
+          "type": "item",
+          "settings": {
+            "title": "Will it work on severely dry or cracked heels?",
+            "content": "<p>Yes — LumaSilk is specifically engineered for <strong>tough, dry skin and deep cracks</strong>, not just light maintenance. The high-speed micro-abrasion technology targets even the most stubborn calluses safely and effectively.</p>"
+          }
         }
       },
       "block_order": [
         "166442457738b23caf-0",
         "166442457738b23caf-1",
-        "166442457738b23caf-2"
+        "166442457738b23caf-2",
+        "item_UiHL7D"
       ],
       "settings": {
         "full_width": false,
