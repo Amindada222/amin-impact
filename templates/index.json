@@ -228,6 +228,98 @@
       "name": "UGC Luxe",
       "settings": {}
     },
+    "ugc_revweis_LrDDaw": {
+      "type": "ugc-revweis",
+      "blocks": {
+        "review_h4DWgg": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/Design_sans_titre_1.png",
+            "author": "Ashley",
+            "verified": true,
+            "rating": 5,
+            "content": "\"I used to go to the nail salon every 3 weeks — expensive and exhausting. With LumaSilk, I get the same smooth results in 10 minutes at home. My heels have never looked this good. Total game changer for busy moms like me!\"",
+            "date": "12 janvier 2025"
+          }
+        },
+        "review_kVUnN9": {
+          "type": "review",
+          "settings": {
+            "author": "Sophie M.",
+            "verified": true,
+            "rating": 5,
+            "content": "Produit incroyable, je recommande vivement !",
+            "date": "12 janvier 2025"
+          }
+        },
+        "review_t8mVUJ": {
+          "type": "review",
+          "settings": {
+            "author": "Émilie D.",
+            "verified": true,
+            "rating": 5,
+            "content": "C'est tellement mieux que mon ancien lisseur ! Mes cheveux sont parfaits en 5 minutes.",
+            "date": "8 janvier 2025"
+          }
+        },
+        "review_AxTcq6": {
+          "type": "review",
+          "settings": {
+            "author": "Emma D.",
+            "verified": true,
+            "rating": 5,
+            "content": "Il fonctionne super bien, j'adore pouvoir l'emporter partout où je vais. La charge tient longtemps, donc pas besoin de le recharger constamment.",
+            "date": "15 janvier 2025"
+          }
+        },
+        "review_B8gVT8": {
+          "type": "review",
+          "settings": {
+            "author": "Agathe T.",
+            "verified": true,
+            "rating": 5,
+            "content": "Cette brosse est parfaite pour une retouche rapide sur mes cheveux fins.",
+            "date": "3 février 2025"
+          }
+        },
+        "review_KfcMV7": {
+          "type": "review",
+          "settings": {
+            "author": "Sarah M.",
+            "verified": true,
+            "rating": 5,
+            "content": "J'étais un peu sceptique en le commandant, mais il est classe. Tellement facile à utiliser, fonctionne bien, super pratique. On peut même le recharger dans la voiture.",
+            "date": "21 janvier 2025"
+          }
+        },
+        "review_YLLPkE": {
+          "type": "review",
+          "settings": {
+            "author": "Léa P.",
+            "verified": true,
+            "rating": 5,
+            "content": "Résultat bluffant dès la première utilisation ! Mes cheveux sont lisses et brillants comme après le salon.",
+            "date": "5 février 2025"
+          }
+        }
+      },
+      "block_order": [
+        "review_h4DWgg",
+        "review_kVUnN9",
+        "review_t8mVUJ",
+        "review_AxTcq6",
+        "review_B8gVT8",
+        "review_KfcMV7",
+        "review_YLLPkE"
+      ],
+      "name": "UGC Reviews",
+      "settings": {
+        "review_count": "",
+        "review_label": "Avis",
+        "write_review_text": "Écrire un avis",
+        "write_review_url": ""
+      }
+    },
     "featured-product": {
       "type": "featured-product",
       "blocks": {
@@ -326,75 +418,6 @@
         "input_text_color": ""
       }
     },
-    "ugc_revweis_LrDDaw": {
-      "type": "ugc-revweis",
-      "blocks": {
-        "review_t8mVUJ": {
-          "type": "review",
-          "settings": {
-            "author": "Émilie D.",
-            "verified": true,
-            "rating": 5,
-            "content": "C'est tellement mieux que mon ancien lisseur ! Mes cheveux sont parfaits en 5 minutes.",
-            "date": "8 janvier 2025"
-          }
-        },
-        "review_AxTcq6": {
-          "type": "review",
-          "settings": {
-            "author": "Emma D.",
-            "verified": true,
-            "rating": 5,
-            "content": "Il fonctionne super bien, j'adore pouvoir l'emporter partout où je vais. La charge tient longtemps, donc pas besoin de le recharger constamment.",
-            "date": "15 janvier 2025"
-          }
-        },
-        "review_B8gVT8": {
-          "type": "review",
-          "settings": {
-            "author": "Agathe T.",
-            "verified": true,
-            "rating": 5,
-            "content": "Cette brosse est parfaite pour une retouche rapide sur mes cheveux fins.",
-            "date": "3 février 2025"
-          }
-        },
-        "review_KfcMV7": {
-          "type": "review",
-          "settings": {
-            "author": "Sarah M.",
-            "verified": true,
-            "rating": 5,
-            "content": "J'étais un peu sceptique en le commandant, mais il est classe. Tellement facile à utiliser, fonctionne bien, super pratique. On peut même le recharger dans la voiture.",
-            "date": "21 janvier 2025"
-          }
-        },
-        "review_YLLPkE": {
-          "type": "review",
-          "settings": {
-            "author": "Léa P.",
-            "verified": true,
-            "rating": 5,
-            "content": "Résultat bluffant dès la première utilisation ! Mes cheveux sont lisses et brillants comme après le salon.",
-            "date": "5 février 2025"
-          }
-        }
-      },
-      "block_order": [
-        "review_t8mVUJ",
-        "review_AxTcq6",
-        "review_B8gVT8",
-        "review_KfcMV7",
-        "review_YLLPkE"
-      ],
-      "name": "UGC Reviews",
-      "settings": {
-        "review_count": "",
-        "review_label": "Avis",
-        "write_review_text": "Écrire un avis",
-        "write_review_url": ""
-      }
-    },
     "faq": {
       "type": "faq",
       "blocks": {
@@ -456,8 +479,8 @@
     "hot-spots",
     "text_APmcUa",
     "image_ugc_ejfWjL",
-    "featured-product",
     "ugc_revweis_LrDDaw",
+    "featured-product",
     "faq"
   ]
 }
