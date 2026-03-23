@@ -280,6 +280,17 @@
             "date": ""
           }
         },
+        "review_kPcizH": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/299940_8646685753669_89eee99c_476c_4d74_b5b9_6d0322f123d7.jpg",
+            "author": "Brittany H.",
+            "verified": true,
+            "rating": 5,
+            "content": "I have diabetes so I have to be really careful with my feet. My doctor actually approved this after I showed it to her. It's gentle enough but still incredibly effective. Finally something that works and that I feel safe using.",
+            "date": "12 janvier 2025"
+          }
+        },
         "review_KfcMV7": {
           "type": "review",
           "settings": {
@@ -310,6 +321,7 @@
         "review_h4DWgg",
         "review_4jpdQX",
         "review_B8gVT8",
+        "review_kPcizH",
         "review_KfcMV7",
         "review_t8mVUJ"
       ],
