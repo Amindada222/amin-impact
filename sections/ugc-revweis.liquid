@@ -96,7 +96,7 @@
     cursor: pointer;
   }
 
-  /* ===== MASONRY GRID ===== */
+  /* ===== DESKTOP : MASONRY ===== */
   .ugc-masonry-grid {
     columns: 4;
     column-gap: 16px;
@@ -110,8 +110,74 @@
     .ugc-masonry-grid { columns: 2; }
   }
 
-  @media (max-width: 480px) {
-    .ugc-masonry-grid { columns: 1; }
+  /* ===== MOBILE : SCROLL HORIZONTAL ===== */
+  @media (max-width: 580px) {
+    .ugc-masonry-grid {
+      display: flex !important;
+      flex-direction: row !important;
+      overflow-x: auto !important;
+      overflow-y: visible !important;
+      columns: unset !important;
+      gap: 12px;
+      padding-bottom: 16px;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+      /* Cache la scrollbar mais garde le scroll */
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+    }
+
+    .ugc-masonry-grid::-webkit-scrollbar {
+      display: none;
+    }
+
+    .ugc-card {
+      min-width: 75vw !important;
+      max-width: 75vw !important;
+      flex-shrink: 0 !important;
+      scroll-snap-align: start;
+      margin-bottom: 0 !important;
+    }
+
+    .ugc-card-image {
+      max-height: 240px !important;
+      width: 100% !important;
+      object-fit: cover !important;
+    }
+
+    /* Indicateur de scroll */
+    .ugc-scroll-hint {
+      display: flex !important;
+    }
+  }
+
+  /* Indicateur scroll caché sur desktop */
+  .ugc-scroll-hint {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    margin-bottom: 14px;
+    color: #888;
+    font-size: 0.8rem;
+  }
+
+  .ugc-scroll-hint-dots {
+    display: flex;
+    gap: 5px;
+  }
+
+  .ugc-scroll-hint-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #ddd;
+  }
+
+  .ugc-scroll-hint-dot.active {
+    background: #00B67A;
+    width: 18px;
+    border-radius: 3px;
   }
 
   /* ===== CARD ===== */
@@ -203,7 +269,6 @@
   <!-- HEADER -->
   <div class="ugc-reviews-header">
     <div class="ugc-reviews-header-left">
-      <!-- Étoiles globales -->
       <div class="ugc-stars-global">
         {% for i in (1..5) %}
           <div class="ugc-star-global">
@@ -224,7 +289,13 @@
     </div>
   </div>
 
-  <!-- MASONRY GRID -->
+  <!-- INDICATEUR SCROLL MOBILE -->
+  <div class="ugc-scroll-hint">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#aaa" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    <span>Glissez pour voir plus</span>
+  </div>
+
+  <!-- GRILLE -->
   <div class="ugc-masonry-grid">
     {% for block in section.blocks %}
       <div class="ugc-card" {{ block.shopify_attributes }}>
@@ -239,7 +310,6 @@
         {% endif %}
 
         <div class="ugc-card-body">
-          <!-- Auteur + vérifié -->
           <div class="ugc-card-author">
             <span class="ugc-card-name">{{ block.settings.author }}</span>
             {% if block.settings.verified %}
@@ -250,7 +320,6 @@
             {% endif %}
           </div>
 
-          <!-- Étoiles -->
           <div class="ugc-card-stars">
             {% assign rating = block.settings.rating | default: 5 %}
             {% for i in (1..rating) %}
@@ -260,10 +329,8 @@
             {% endfor %}
           </div>
 
-          <!-- Texte -->
           <p class="ugc-card-text">{{ block.settings.content }}</p>
 
-          <!-- Date -->
           {% if block.settings.date != blank %}
             <p class="ugc-card-date">{{ block.settings.date }}</p>
           {% endif %}
@@ -389,7 +456,7 @@
             "author": "Sarah M.",
             "verified": true,
             "rating": 5,
-            "content": "J'étais un peu sceptique en le commandant, mais il est classe. Tellement facile à utiliser, fonctionne bien, super pratique. On peut même le recharger dans la voiture.",
+            "content": "J'étais un peu sceptique en le commandant, mais il est classe. Tellement facile à utiliser, fonctionne bien, super pratique.",
             "date": "21 janvier 2025"
           }
         },
