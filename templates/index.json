@@ -185,10 +185,17 @@
           "settings": {
             "video": "shopify://files/videos/c742dac5af7f45f6be1b3297a33ac098.HD-720p-1.6Mbps-47698850.mp4"
           }
+        },
+        "video_A3WqcQ": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/trendtrack_tiktok_7545807214624181526.mp4"
+          }
         }
       },
       "block_order": [
-        "video_egTqMp"
+        "video_egTqMp",
+        "video_A3WqcQ"
       ],
       "name": "UGC vidéos",
       "settings": {}
@@ -433,6 +440,66 @@
         "accordion_text_color": ""
       }
     },
+    "testimonials_4CjUeM": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonial_DgUYwC": {
+          "type": "testimonial",
+          "settings": {
+            "round_avatar": true,
+            "show_rating": true,
+            "rating": 4,
+            "author": "John S.",
+            "title": "Testimonial 1",
+            "content": "<p>Share what your customers are saying about your products, customer service or shipping rates.</p>"
+          }
+        },
+        "testimonial_i8Na9L": {
+          "type": "testimonial",
+          "settings": {
+            "round_avatar": true,
+            "show_rating": true,
+            "rating": 5,
+            "author": "Mary U.",
+            "title": "Testimonial 2",
+            "content": "<p>Share what your customers are saying about your products, customer service or shipping rates.</p>"
+          }
+        },
+        "testimonial_fTTf33": {
+          "type": "testimonial",
+          "settings": {
+            "round_avatar": true,
+            "show_rating": true,
+            "rating": 4,
+            "author": "Joshua A.",
+            "title": "Testimonial 3",
+            "content": "<p>Share what your customers are saying about your products, customer service or shipping rates.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_DgUYwC",
+        "testimonial_i8Na9L",
+        "testimonial_fTTf33"
+      ],
+      "name": "Testimonials",
+      "settings": {
+        "full_width": true,
+        "stack_testimonials": true,
+        "subheading": "",
+        "title": "Testimonials",
+        "content": "",
+        "link_url": "",
+        "link_text": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "testimonial_card_background": "",
+        "testimonial_card_text_color": ""
+      }
+    },
     "image_ugc_ejfWjL": {
       "type": "image-ugc",
       "blocks": {
@@ -475,6 +542,7 @@
     "ugc_revweis_LrDDaw",
     "featured-product",
     "faq",
+    "testimonials_4CjUeM",
     "image_ugc_ejfWjL"
   ]
 }
