@@ -51,33 +51,6 @@
         "background_gradient": "linear-gradient(60deg, rgba(60, 65, 68, 1), rgba(23, 29, 33, 1) 98%)"
       }
     },
-    "before_after_image_npVaXC": {
-      "type": "before-after-image",
-      "name": "Before/after image",
-      "settings": {
-        "full_width": true,
-        "subheading": "",
-        "title": "",
-        "content": "",
-        "before_image": "shopify://shop_images/cmn3obbb102adwsrkll1vc0jw.jpg",
-        "before_image_mobile": "shopify://shop_images/cmn3obbb102adwsrkll1vc0jw.jpg",
-        "after_image": "shopify://shop_images/cmn3obbb102adwsrkll1vc0jw.jpg",
-        "after_image_mobile": "shopify://shop_images/cmn3obbb102adwsrkll1vc0jw.jpg",
-        "expand_image": false,
-        "text_position": "start",
-        "before_after_text_position": "top",
-        "before_text": "Before",
-        "after_text": "After",
-        "drag_initial_position": 50,
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "before_text_color": "#ffffff",
-        "after_text_color": "#ffffff",
-        "drag_cursor_background": "#ffffff",
-        "drag_cursor_color": "#000000"
-      }
-    },
     "logo_marque_kpGUQP": {
       "type": "logo-marque",
       "blocks": {
@@ -114,6 +87,33 @@
       ],
       "name": "Logo défilant luxe",
       "settings": {}
+    },
+    "before_after_image_npVaXC": {
+      "type": "before-after-image",
+      "name": "Before/after image",
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "before_image": "shopify://shop_images/cmn3obbb102adwsrkll1vc0jw.jpg",
+        "before_image_mobile": "shopify://shop_images/cmn3obbb102adwsrkll1vc0jw.jpg",
+        "after_image": "shopify://shop_images/cmn3obbb102adwsrkll1vc0jw.jpg",
+        "after_image_mobile": "shopify://shop_images/cmn3obbb102adwsrkll1vc0jw.jpg",
+        "expand_image": false,
+        "text_position": "start",
+        "before_after_text_position": "top",
+        "before_text": "Before",
+        "after_text": "After",
+        "drag_initial_position": 50,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "before_text_color": "#ffffff",
+        "after_text_color": "#ffffff",
+        "drag_cursor_background": "#ffffff",
+        "drag_cursor_color": "#000000"
+      }
     },
     "ugc_video_mdFipD": {
       "type": "ugc-video",
@@ -258,17 +258,6 @@
     "ugc_revweis_LrDDaw": {
       "type": "ugc-revweis",
       "blocks": {
-        "review_h4DWgg": {
-          "type": "review",
-          "settings": {
-            "image": "shopify://shop_images/Design_sans_titre_1.png",
-            "author": "Ashley",
-            "verified": false,
-            "rating": 5,
-            "content": "\"I used to go to the nail salon every 3 weeks — expensive and exhausting. With LumaSilk, I get the same smooth results in 10 minutes at home. My heels have never looked this good. Total game changer for busy moms like me!\"",
-            "date": ""
-          }
-        },
         "review_kVUnN9": {
           "type": "review",
           "settings": {
@@ -287,6 +276,17 @@
             "verified": false,
             "rating": 5,
             "content": "\"I bought LumaSilk as a little treat for myself. Best decision ever. Elegant, powerful, and so simple to use. I use it twice a week and my feet stay smooth all the time. No more hiding under socks — summer here I come!\"",
+            "date": ""
+          }
+        },
+        "review_h4DWgg": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/Design_sans_titre_1.png",
+            "author": "Ashley",
+            "verified": false,
+            "rating": 5,
+            "content": "\"I used to go to the nail salon every 3 weeks — expensive and exhausting. With LumaSilk, I get the same smooth results in 10 minutes at home. My heels have never looked this good. Total game changer for busy moms like me!\"",
             "date": ""
           }
         },
@@ -325,9 +325,9 @@
         }
       },
       "block_order": [
-        "review_h4DWgg",
         "review_kVUnN9",
         "review_AxTcq6",
+        "review_h4DWgg",
         "review_B8gVT8",
         "review_KfcMV7",
         "review_t8mVUJ"
@@ -462,8 +462,8 @@
   },
   "order": [
     "slideshow",
-    "before_after_image_npVaXC",
     "logo_marque_kpGUQP",
+    "before_after_image_npVaXC",
     "ugc_video_mdFipD",
     "impact_text_arimNn",
     "hot-spots",
