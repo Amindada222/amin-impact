@@ -455,16 +455,28 @@
     "testimonials_4CjUeM": {
       "type": "testimonials",
       "blocks": {
-        "testimonial_qfBDen": {
+        "testimonial_Hj38UM": {
           "type": "testimonial",
           "settings": {
-            "image": "shopify://shop_images/cmn2z4g77027kwsrk6qiwnsjq.jpg",
+            "image": "shopify://shop_images/Capture_d_ecran_2026-03-24_091243.png",
             "round_avatar": true,
             "show_rating": true,
             "rating": 4,
-            "author": "Megan.F",
+            "author": "Tiffany N",
             "title": "",
-            "content": "<p><br/>I was embarrassed to even get a pedicure at the salon because of how bad my heels were. I'd apologize to the nail tech every single time. Now I use this at home, get my feet to a good place, and actually feel comfortable going in for a polish. Life changing honestly.<br/><br/></p>"
+            "content": "<p><br/>Bought this for my mom as a gift because she's on her feet all day at work and her heels were cracking and painful. She called me after the first use crying happy tears. She said it's the best gift I've ever given her. We both have one now.<br/><br/></p>"
+          }
+        },
+        "testimonial_HhPiky": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Capture_d_ecran_2026-03-23_223319.png",
+            "round_avatar": true,
+            "show_rating": true,
+            "rating": 5,
+            "author": "Stephanie L",
+            "title": "",
+            "content": "<p><br/>The salon near me closed down and I panicked because my feet are genuinely terrible without regular care. Found this, ordered it, and honestly? I don't even miss the salon. This does a better job and I do it on MY schedule. Completely sold.<br/><br/></p>"
           }
         },
         "testimonial_DgUYwC": {
@@ -503,25 +515,26 @@
             "content": "<p><br/>I bought this as a treat for myself and it genuinely made me feel like I was taking care of myself again. There's something about having soft pretty feet that just makes you feel put together. Sounds silly but it boosted my confidence more than I expected<br/><br/></p>"
           }
         },
-        "testimonial_HhPiky": {
+        "testimonial_qfBDen": {
           "type": "testimonial",
           "settings": {
-            "image": "shopify://shop_images/Capture_d_ecran_2026-03-23_223319.png",
+            "image": "shopify://shop_images/cmn2z4g77027kwsrk6qiwnsjq.jpg",
             "round_avatar": true,
             "show_rating": true,
-            "rating": 5,
-            "author": "Stephanie L",
+            "rating": 4,
+            "author": "Megan.F",
             "title": "",
-            "content": "<p><br/>The salon near me closed down and I panicked because my feet are genuinely terrible without regular care. Found this, ordered it, and honestly? I don't even miss the salon. This does a better job and I do it on MY schedule. Completely sold.<br/><br/></p>"
+            "content": "<p><br/>I was embarrassed to even get a pedicure at the salon because of how bad my heels were. I'd apologize to the nail tech every single time. Now I use this at home, get my feet to a good place, and actually feel comfortable going in for a polish. Life changing honestly.<br/><br/></p>"
           }
         }
       },
       "block_order": [
-        "testimonial_qfBDen",
+        "testimonial_Hj38UM",
+        "testimonial_HhPiky",
         "testimonial_DgUYwC",
         "testimonial_i8Na9L",
         "testimonial_fTTf33",
-        "testimonial_HhPiky"
+        "testimonial_qfBDen"
       ],
       "name": "Testimonials",
       "settings": {
