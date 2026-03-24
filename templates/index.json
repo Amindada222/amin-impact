@@ -482,19 +482,33 @@
         "testimonial_fTTf33": {
           "type": "testimonial",
           "settings": {
+            "image": "shopify://shop_images/Capture_d_ecran_2026-03-24_090932.png",
             "round_avatar": true,
             "show_rating": true,
             "rating": 4,
-            "author": "Joshua A.",
-            "title": "Testimonial 3",
-            "content": "<p>Share what your customers are saying about your products, customer service or shipping rates.</p>"
+            "author": "Amanda C.",
+            "title": "",
+            "content": "<p><br/>I bought this as a treat for myself and it genuinely made me feel like I was taking care of myself again. There's something about having soft pretty feet that just makes you feel put together. Sounds silly but it boosted my confidence more than I expected<br/><br/></p>"
+          }
+        },
+        "testimonial_HhPiky": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/Capture_d_ecran_2026-03-23_223319.png",
+            "round_avatar": true,
+            "show_rating": true,
+            "rating": 4,
+            "author": "Stephanie L",
+            "title": "",
+            "content": "<p><br/>The salon near me closed down and I panicked because my feet are genuinely terrible without regular care. Found this, ordered it, and honestly? I don't even miss the salon. This does a better job and I do it on MY schedule. Completely sold.<br/><br/></p>"
           }
         }
       },
       "block_order": [
         "testimonial_DgUYwC",
         "testimonial_i8Na9L",
-        "testimonial_fTTf33"
+        "testimonial_fTTf33",
+        "testimonial_HhPiky"
       ],
       "name": "Testimonials",
       "settings": {
