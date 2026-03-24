@@ -204,7 +204,7 @@
       "type": "text",
       "name": "Texte premium +",
       "settings": {
-        "rating_text": "4,8/5 RATING FROM VERIFIED CUSTOMERS",
+        "rating_text": "4.8/5 RATING FROM VERIFIED CUSTOMERS",
         "badge": "VERIFIED CUSTOMER REVIEWS",
         "number": 25000,
         "title": "Happy customers across the USA",
