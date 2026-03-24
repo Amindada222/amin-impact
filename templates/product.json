@@ -38,10 +38,6 @@
             "show_empty": false
           }
         },
-        "payment_terms": {
-          "type": "payment_terms",
-          "settings": {}
-        },
         "separator": {
           "type": "separator",
           "settings": {}
@@ -87,7 +83,6 @@
         "badges",
         "price",
         "rating",
-        "payment_terms",
         "separator",
         "description",
         "variant_picker",
