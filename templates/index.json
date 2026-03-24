@@ -455,13 +455,25 @@
     "testimonials_4CjUeM": {
       "type": "testimonials",
       "blocks": {
+        "testimonial_Q77Tg7": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/cmn2z9o9q0284wsrk4tahnvef.jpg",
+            "round_avatar": true,
+            "show_rating": true,
+            "rating": 5,
+            "author": "Sarah.M",
+            "title": "",
+            "content": "<p><br/>I've been hiding my feet for YEARS. Literally wore closed shoes to the beach last summer because I was so embarrassed. Used this for the first time last Tuesday and I couldn't believe the difference. My husband actually noticed without me saying anything. That alone was worth every penny.<br/><br/></p>"
+          }
+        },
         "testimonial_Hj38UM": {
           "type": "testimonial",
           "settings": {
             "image": "shopify://shop_images/Capture_d_ecran_2026-03-24_091243.png",
             "round_avatar": true,
             "show_rating": true,
-            "rating": 4,
+            "rating": 5,
             "author": "Tiffany N",
             "title": "",
             "content": "<p><br/>Bought this for my mom as a gift because she's on her feet all day at work and her heels were cracking and painful. She called me after the first use crying happy tears. She said it's the best gift I've ever given her. We both have one now.<br/><br/></p>"
@@ -529,6 +541,7 @@
         }
       },
       "block_order": [
+        "testimonial_Q77Tg7",
         "testimonial_Hj38UM",
         "testimonial_HhPiky",
         "testimonial_DgUYwC",
