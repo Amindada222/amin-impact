@@ -455,6 +455,18 @@
     "testimonials_4CjUeM": {
       "type": "testimonials",
       "blocks": {
+        "testimonial_qfBDen": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/cmn2z4g77027kwsrk6qiwnsjq.jpg",
+            "round_avatar": true,
+            "show_rating": true,
+            "rating": 4,
+            "author": "Megan.F",
+            "title": "",
+            "content": "<p><br/>I was embarrassed to even get a pedicure at the salon because of how bad my heels were. I'd apologize to the nail tech every single time. Now I use this at home, get my feet to a good place, and actually feel comfortable going in for a polish. Life changing honestly.<br/><br/></p>"
+          }
+        },
         "testimonial_DgUYwC": {
           "type": "testimonial",
           "settings": {
@@ -497,7 +509,7 @@
             "image": "shopify://shop_images/Capture_d_ecran_2026-03-23_223319.png",
             "round_avatar": true,
             "show_rating": true,
-            "rating": 4,
+            "rating": 5,
             "author": "Stephanie L",
             "title": "",
             "content": "<p><br/>The salon near me closed down and I panicked because my feet are genuinely terrible without regular care. Found this, ordered it, and honestly? I don't even miss the salon. This does a better job and I do it on MY schedule. Completely sold.<br/><br/></p>"
@@ -505,6 +517,7 @@
         }
       },
       "block_order": [
+        "testimonial_qfBDen",
         "testimonial_DgUYwC",
         "testimonial_i8Na9L",
         "testimonial_fTTf33",
