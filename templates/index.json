@@ -128,8 +128,8 @@
       "type": "hot-spots",
       "settings": {
         "full_width": true,
-        "image": "shopify://shop_images/4_benefices_338a2d80-ac5b-4b30-b4dc-2a7268eb0313.png",
-        "mobile_image": "shopify://shop_images/4_benefices_ccf05116-bdc7-4e1c-83e2-59318af425d6.png",
+        "image": "shopify://shop_images/4_benefices_2.png",
+        "mobile_image": "shopify://shop_images/4_benefices_2.png",
         "title": "",
         "content": "",
         "button_text": "",
@@ -365,7 +365,7 @@
           "settings": {
             "icon": "none",
             "icon_width": 20,
-            "title": "",
+            "title": "Description",
             "content": "<p><strong>Say goodbye to calluses and dry skin — painless, effortless, from the comfort of your home.</strong></p><p>Spending hours on your feet? Your feet deserve better than creams that do nothing. The <strong>LumaSilk</strong> is the care your feet have been waiting for.</p><h3>✨ What You'll Feel From the Very First Use</h3><p>In just a few minutes, the LumaSilk's exfoliating roller gently removes stubborn calluses, dead skin, and rough patches — leaving you with <strong>soft, smooth, and hydrated feet</strong> just like after a professional salon session.</p><h3>🔧 How Does It Work?</h3><p>The high-performance motor spins at <strong>1,700 or 2,000 RPM</strong> depending on your needs. Choose your speed, glide the roller over the area, and dead skin disappears instantly — <strong>painless, effortless.</strong></p><p>The <strong>2 interchangeable heads</strong> adapt to every situation:</p><ul><li>🌸 <strong>Fine head</strong> → daily maintenance & sensitive skin</li><li>💪 <strong>Coarse head</strong> → thick calluses & stubborn dead skin</li></ul><h3>🔋 Total Freedom — Up to 100 Minutes of Battery Life</h3><p>A single charge gives you <strong>80 to 100 minutes</strong> of wireless use. Use it in your bathroom, while traveling, or wherever you want — it's compact, lightweight, and always ready.</p><h3>🧼 Hygienic and Easy to Maintain</h3><p>The roller heads are <strong>100% waterproof</strong> — a simple rinse under water is all it takes. No bacteria buildup, no dead skin accumulation. Always clean, always effective.</p><h3>🎁 The Perfect Gift</h3><p>Give the experience of a <strong>professional spa at home</strong> to the ones you love. LumaSilk is the ideal gift for anyone who deserves to take care of themselves.</p>",
             "page": ""
           }
