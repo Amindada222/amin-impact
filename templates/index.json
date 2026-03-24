@@ -458,23 +458,25 @@
         "testimonial_DgUYwC": {
           "type": "testimonial",
           "settings": {
+            "image": "shopify://shop_images/Capture_d_ecran_2026-03-24_090801.png",
             "round_avatar": true,
             "show_rating": true,
-            "rating": 4,
-            "author": "John S.",
-            "title": "Testimonial 1",
-            "content": "<p>Share what your customers are saying about your products, customer service or shipping rates.</p>"
+            "rating": 5,
+            "author": "Kayla S.",
+            "title": "",
+            "content": "<p><br/>\"I travel a lot for work so I can't always get to a salon. This fits perfectly in my carry-on and I can do a quick session in my hotel room. My feet look maintained and polished no matter where I am. Total game changer for my routine.\"<br/><br/></p>"
           }
         },
         "testimonial_i8Na9L": {
           "type": "testimonial",
           "settings": {
+            "image": "shopify://shop_images/Capture_d_ecran_2026-03-23_223338.png",
             "round_avatar": true,
             "show_rating": true,
             "rating": 5,
-            "author": "Mary U.",
-            "title": "Testimonial 2",
-            "content": "<p>Share what your customers are saying about your products, customer service or shipping rates.</p>"
+            "author": "Rachel",
+            "title": "",
+            "content": "<p><br/>\"I'm a mom of 3 and I have zero time for salon appointments. I use this while the kids are in the bath. 10 minutes, feet done, no babysitter needed, no $60 spent. It fits into my real life and that's what I love most about it.\"<br/><br/></p>"
           }
         },
         "testimonial_fTTf33": {
